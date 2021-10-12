@@ -1,0 +1,25 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "pattern": [
+    "mmm",
+	"mmw",
+	"hh "
+  ],
+  "key": {
+    "m": {
+      "item": "twilightforest:fiery_tears"
+    },
+    "h": {
+      "item": "minecraft:blaze_rod"
+    },
+    "w": {
+      "item": "spartanweaponry:battleaxe_iron"
+    }
+  },
+  "result": {
+    "nbt": "{ench:[{lvl:2s,id:20s}]}",
+    "item": "spartantwilight:battleaxe_fiery",
+    "type": "minecraft:item_nbt"
+  }
+}

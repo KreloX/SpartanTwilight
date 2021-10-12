@@ -1,0 +1,28 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+	"msm",
+	" h "
+  ],
+  "key": {
+    "m": {
+      "type": "forge:ore_dict",
+	  "ore": "ingotSteeleaf"
+    },
+    "h": {
+      "item": "spartanweaponry:material",
+	  "data": 0
+    },
+	"s": {
+      "type": "forge:ore_dict",
+	  "ore": "stickWood"
+	}
+  },
+  "result": {
+    "nbt": "{ench:[{lvl:2s,id:21s},{lvl:2s,id:32s}]}",
+    "item": "spartantwilight:battleaxe_steeleaf",
+    "type": "minecraft:item_nbt"
+  }
+}

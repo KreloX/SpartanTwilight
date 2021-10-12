@@ -1,0 +1,24 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+	"mmm",
+	" h "
+  ],
+  "key": {
+    "m": {
+      "type": "forge:ore_dict",
+	  "ore": "ingotSteeleaf"
+    },
+    "h": {
+      "item": "spartanweaponry:material",
+	  "data": 0
+    }
+  },
+  "result": {
+    "nbt": "{ench:[{lvl:2s,id:21s}]}",
+    "item": "spartantwilight:hammer_steeleaf",
+    "type": "minecraft:item_nbt"
+  }
+}

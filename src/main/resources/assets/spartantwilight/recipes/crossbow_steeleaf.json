@@ -1,0 +1,34 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bsm",
+	"sl ",
+	"m h"
+  ],
+  "key": {
+    "m": {
+      "type": "forge:ore_dict",
+	  "ore": "ingotSteeleaf"
+    },
+    "h": {
+      "item": "spartanweaponry:material",
+	  "data": 0
+    },
+	"s": {
+      "type": "forge:ore_dict",
+	  "ore": "string"
+	},
+	"l": {
+      "type": "forge:ore_dict",
+	  "ore": "logWood"
+    },
+    "b": {
+      "item": "minecraft:bow"
+    }
+  },
+  "result": {
+    "item": "spartantwilight:crossbow_steeleaf",
+    "type": "minecraft:item_nbt"
+  }
+}

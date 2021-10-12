@@ -1,0 +1,35 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bsm",
+	"sl ",
+	"m h"
+  ],
+  "key": {
+    "m": {
+      "type": "forge:ore_dict",
+	  "ore": "ingotIronwood"
+    },
+    "h": {
+      "item": "spartanweaponry:material",
+	  "data": 0
+    },
+	"s": {
+      "type": "forge:ore_dict",
+	  "ore": "string"
+	},
+	"l": {
+      "type": "forge:ore_dict",
+	  "ore": "logWood"
+    },
+    "b": {
+      "item": "minecraft:bow"
+    }
+  },
+  "result": {
+    "nbt": "{ench:[{lvl:1s,id:49s}]}",
+    "item": "spartantwilight:crossbow_ironwood",
+    "type": "minecraft:item_nbt"
+  }
+}
