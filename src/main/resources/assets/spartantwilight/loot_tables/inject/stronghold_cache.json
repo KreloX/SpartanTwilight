@@ -1,0 +1,668 @@
+{
+	"pools": 
+	[{
+		"name": "swtf_stronghold_cache",
+		"rolls": 1,
+		"entries": 
+			[{
+        		"type": "item",
+        		"name": "spartantwilight:battleaxe_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:boomerang_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:crossbow_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:dagger_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:glaive_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:greatsword_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:halberd_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:hammer_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:javelin_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:katana_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:lance_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:longbow_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:longsword_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:mace_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:pike_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:staff_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:rapier_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:saber_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:spear_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:throwing_axe_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:throwing_knife_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:warhammer_steeleaf",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 10
+        		}]
+      		},
+      		{
+        		"type": "item",
+        		"name": "spartantwilight:battleaxe_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:boomerang_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:crossbow_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:dagger_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:glaive_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:greatsword_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:halberd_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:hammer_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:javelin_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:katana_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:lance_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:longbow_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:longsword_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:mace_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:pike_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:staff_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:rapier_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:saber_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:spear_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:throwing_axe_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:throwing_knife_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:warhammer_ironwood",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+      		{
+        		"type": "item",
+        		"name": "spartanweaponry:battleaxe_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:boomerang_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:crossbow_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 15
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:dagger_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:glaive_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:greatsword_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:halberd_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:hammer_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:javelin_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:katana_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:lance_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:longbow_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:longsword_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:mace_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:pike_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:staff_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:rapier_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:saber_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:spear_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:throwing_axe_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:throwing_knife_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartanweaponry:warhammer_iron",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		}]
+	}]
+}

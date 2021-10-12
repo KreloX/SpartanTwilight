@@ -1,0 +1,693 @@
+{
+	"pools": 
+	[{
+		"name": "1stchance",
+		"conditions": 
+		[{
+				"condition": "random_chance",
+				"chance": 0.4
+		}],
+		"rolls": 1,
+		"entries": 
+			[{
+        		"type": "item",
+        		"name": "spartantwilight:battleaxe_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:boomerang_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:crossbow_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:dagger_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:glaive_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:greatsword_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:halberd_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:hammer_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:javelin_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:katana_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:lance_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:longbow_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:longsword_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:mace_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:pike_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:staff_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:rapier_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:saber_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:spear_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:throwing_axe_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:throwing_knife_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:warhammer_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		}]
+	},
+	{
+		"name": "2ndchance",
+		"conditions": 
+		[{
+				"condition": "random_chance",
+				"chance": 0.4
+		}],
+		"rolls": 1,
+		"entries": 
+			[{
+        		"type": "item",
+        		"name": "spartantwilight:battleaxe_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:boomerang_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:crossbow_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:dagger_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:glaive_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:greatsword_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:halberd_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:hammer_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:javelin_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:katana_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:lance_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:longbow_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:longsword_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:mace_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:pike_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:staff_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:rapier_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:saber_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:spear_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:throwing_axe_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:throwing_knife_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:warhammer_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		}]
+      	},
+      	{
+		"name": "3rdchance",
+		"conditions": 
+		[{
+				"condition": "random_chance",
+				"chance": 0.4
+		}],
+		"rolls": 1,
+		"entries": 
+			[{
+        		"type": "item",
+        		"name": "spartantwilight:battleaxe_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:boomerang_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:crossbow_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:dagger_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:glaive_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:greatsword_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:halberd_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:hammer_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:javelin_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:katana_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:lance_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:longbow_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:longsword_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:mace_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:pike_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:staff_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:rapier_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:saber_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:spear_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:throwing_axe_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:throwing_knife_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		},
+			{
+        		"type": "item",
+        		"name": "spartantwilight:warhammer_knightly",
+        		"functions": 
+        		[{
+          			"function": "enchant_with_levels",
+          			"treasure": true,
+          			"levels": 20
+        		}]
+      		}]
+      	}]
+}
