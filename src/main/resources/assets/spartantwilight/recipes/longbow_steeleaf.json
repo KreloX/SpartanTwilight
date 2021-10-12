@@ -1,0 +1,31 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "htm",
+	"t s",
+	"mss"
+  ],
+  "key": {
+    "m": {
+      "type": "forge:ore_dict",
+	  "ore": "ingotSteeleaf"
+    },
+    "h": {
+      "item": "spartanweaponry:material",
+	  "data": 0
+    },
+	"s": {
+      "type": "forge:ore_dict",
+	  "ore": "string"
+	},
+	"t": {
+      "type": "forge:ore_dict",
+	  "ore": "stickWood"
+	}
+  },
+  "result": {
+    "item": "spartantwilight:longbow_steeleaf",
+    "type": "minecraft:item_nbt"
+  }
+}
