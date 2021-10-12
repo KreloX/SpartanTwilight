@@ -1,0 +1,16 @@
+[
+{
+  "modid": "spartantwilight",
+  "name": "Spartan Weaponry: Twilight Forest",
+  "description": "Spicing up Spartan Weaponry by implementing materials from the magical world of Twilight Forest.",
+  "version": "0.1.3",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["KreloX"],
+  "credits": "Thanks to Benimatic for making The Twilight Forest and to ObliviousSpartan for making Spartan Weaponry",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
