@@ -1,0 +1,92 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url = "https://files.minecraftforge.net/maven" }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+apply plugin: 'net.minecraftforge.gradle.forge'
+//Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
+
+
+version = "${mod_version}"
+group = "krelox.spartantwilight"
+archivesBaseName = "spartantwilight"
+
+sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
+compileJava {
+    sourceCompatibility = targetCompatibility = '1.8'
+}
+
+minecraft {
+    version = "${mc_version}-${forge_version}"
+    runDir = "run"
+    
+    mappings = "stable_39"
+}
+
+repositories {
+
+	maven {
+		name = "Twilight Forest Maven"
+		url = "https://modmaven.dev/"
+	}
+
+    maven {
+        name 'progwm\'s Maven' // JEI + Mantle + TCon
+        url 'https://dvs1.progwml6.com/files/maven'
+    }
+    maven {
+        name 'tterrag\'s Maven' // CTM
+        url 'https://maven.tterrag.com/'
+}
+    maven {
+        name 'Jared\'s Maven' // Immersive Engineering + Patchouli
+        url 'https://blamejared.com/maven'
+    }
+    maven {
+        name 'player\'s Maven' // Forestry
+        url 'http://maven.ic2.player.to/'
+    }
+    maven {
+        name 'Curseforge Maven' // Baubles, Thaumcraft, Wizardry
+        url 'https://minecraft.curseforge.com/api/maven/'
+    }
+
+}
+
+dependencies {
+
+
+    deobfCompile "mezz.jei:jei_${mc_version}:${jei_version}"
+    deobfCompile "slimeknights.mantle:Mantle:${mc_version_short}-${mantle_version}"
+    deobfCompile "slimeknights:TConstruct:${mc_version}-${tcon_version}"
+    deobfCompile "team.chisel.ctm:CTM:MC${mc_version}-${ctm_version}"
+    deobfCompile "team.chisel:Chisel:MC${mc_version}-${chisel_version}"
+    deobfCompile "blusunrize:ImmersiveEngineering:${immersive_engineering_version}"
+    deobfCompile "vazkii.patchouli:Patchouli:${patchouli_version}"
+    deobfCompile "net.sengir.forestry:forestry_${mc_version}:${forestry_version}"
+    deobfCompile "baubles:Baubles:${mc_version_short}:${baubles_version}"
+    deobfCompile "thaumcraft:Thaumcraft:${mc_version}:${thaumcraft_version}"
+
+    deobfCompile "spartan-weaponry:SpartanWeaponry-1.12.2:beta:1.3.8"
+	deobfCompile "com.github.teamtwilight.twilightforest:twilightforest-${mc_version}:${tf_version}:universal"
+
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+                
+        expand 'version':project.version, 'mcversion':project.minecraft.version
+    }
+        
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}
