@@ -1,0 +1,24 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " m ",
+	" m ",
+	"mh "
+  ],
+  "key": {
+    "m": {
+      "type": "forge:ore_dict",
+	  "ore": "ingotIronwood"
+    },
+    "h": {
+      "item": "spartanweaponry:material",
+	  "data": 0
+    }
+  },
+  "result": {
+    "nbt": "{ench:[{lvl:1s,id:19s}]}",
+    "item": "spartantwilight:saber_ironwood",
+    "type": "minecraft:item_nbt"
+  }
+}

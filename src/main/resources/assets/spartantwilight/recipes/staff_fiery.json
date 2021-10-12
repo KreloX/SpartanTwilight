@@ -1,0 +1,23 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " p ",
+	" m ",
+	"   "
+  ],
+  "key": {
+    "m": {
+      "type": "forge:ore_dict",
+	  "ore": "ingotFiery"
+    },
+    "p": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "nbt": "{ench:[{lvl:2s,id:20s}]}",
+    "item": "spartantwilight:staff_fiery",
+    "type": "minecraft:item_nbt"
+  }
+}
