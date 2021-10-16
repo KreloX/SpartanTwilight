@@ -25,6 +25,13 @@ public class LootHandler
 	public static String[] stronghold_room = {"twilightforest:structures/stronghold_room/stronghold_room"};
 	public static String[] aurora_room = {"twilightforest:structures/aurora_room/aurora_room"};
 	public static String[] darktower_key = {"twilightforest:structures/darktower_key/darktower_key"};
+	public static String[] aurora_cache = {"twilightforest:structures/aurora_cache/aurora_cache"};
+	public static String[] darktower_cache = {"twilightforest:structures/darktower_cache/darktower_cache"};
+	public static String[] hedge_maze = {"twilightforest:structures/hedge_maze/hedge_maze"};
+	public static String[] hill_1 = {"twilightforest:structures/hill_1/hill_1"};
+	public static String[] hill_2 = {"twilightforest:structures/hill_2/hill_2"};
+	public static String[] hill_3 = {"twilightforest:structures/hill_3/hill_3"};
+	public static String[] labyrinth_dead_end = {"twilightforest:structures/labyrinth_dead_end/labyrinth_dead_end"};
 	
 	public static void register()
 	{
@@ -35,6 +42,13 @@ public class LootHandler
 		LootTableList.register(new ResourceLocation(Reference.modid, "inject/stronghold_room"));
 		LootTableList.register(new ResourceLocation(Reference.modid, "inject/aurora_room"));
 		LootTableList.register(new ResourceLocation(Reference.modid, "inject/darktower_key"));
+		LootTableList.register(new ResourceLocation(Reference.modid, "inject/aurora_cache"));
+		LootTableList.register(new ResourceLocation(Reference.modid, "inject/darktower_cache"));
+		LootTableList.register(new ResourceLocation(Reference.modid, "inject/hedge_maze"));
+		LootTableList.register(new ResourceLocation(Reference.modid, "inject/hill_1"));
+		LootTableList.register(new ResourceLocation(Reference.modid, "inject/hill_2"));
+		LootTableList.register(new ResourceLocation(Reference.modid, "inject/hill_3"));
+		LootTableList.register(new ResourceLocation(Reference.modid, "inject/labyrinth_dead_end"));
 	}
 	
 	@SubscribeEvent
@@ -47,6 +61,13 @@ public class LootHandler
 		ResourceLocation[] stronghold_room = krelox.spartantwilight.loot.LootHandler.toResourceLocations(LootHandler.stronghold_room);
 		ResourceLocation[] aurora_room = krelox.spartantwilight.loot.LootHandler.toResourceLocations(LootHandler.aurora_room);
 		ResourceLocation[] darktower_key = krelox.spartantwilight.loot.LootHandler.toResourceLocations(LootHandler.darktower_key);
+		ResourceLocation[] aurora_cache = krelox.spartantwilight.loot.LootHandler.toResourceLocations(LootHandler.aurora_cache);
+		ResourceLocation[] darktower_cache = krelox.spartantwilight.loot.LootHandler.toResourceLocations(LootHandler.darktower_cache);
+		ResourceLocation[] hedge_maze = krelox.spartantwilight.loot.LootHandler.toResourceLocations(LootHandler.hedge_maze);
+		ResourceLocation[] hill_1 = krelox.spartantwilight.loot.LootHandler.toResourceLocations(LootHandler.hill_1);
+		ResourceLocation[] hill_2 = krelox.spartantwilight.loot.LootHandler.toResourceLocations(LootHandler.hill_2);
+		ResourceLocation[] hill_3 = krelox.spartantwilight.loot.LootHandler.toResourceLocations(LootHandler.hill_3);
+		ResourceLocation[] labyrinth_dead_end = krelox.spartantwilight.loot.LootHandler.toResourceLocations(LootHandler.labyrinth_dead_end);
 		
 		if(Arrays.asList(labyrinth_room).contains(event.getName()))
 		{
@@ -75,6 +96,34 @@ public class LootHandler
 		if(Arrays.asList(darktower_key).contains(event.getName()))
 		{
 			event.getTable().addPool(getAdditive(Reference.modid + ":inject/darktower_key", Reference.modid + "_additional_dungeon_loot"));
+		}
+		if(Arrays.asList(aurora_cache).contains(event.getName()))
+		{
+			event.getTable().addPool(getAdditive(Reference.modid + ":inject/aurora_cache", Reference.modid + "_additional_dungeon_loot"));
+		}
+		if(Arrays.asList(darktower_cache).contains(event.getName()))
+		{
+			event.getTable().addPool(getAdditive(Reference.modid + ":inject/darktower_cache", Reference.modid + "_additional_dungeon_loot"));
+		}
+		if(Arrays.asList(hedge_maze).contains(event.getName()))
+		{
+			event.getTable().addPool(getAdditive(Reference.modid + ":inject/hedge_maze", Reference.modid + "_additional_dungeon_loot"));
+		}
+		if(Arrays.asList(hill_1).contains(event.getName()))
+		{
+			event.getTable().addPool(getAdditive(Reference.modid + ":inject/hill_1", Reference.modid + "_additional_dungeon_loot"));
+		}
+		if(Arrays.asList(hill_2).contains(event.getName()))
+		{
+			event.getTable().addPool(getAdditive(Reference.modid + ":inject/hill_2", Reference.modid + "_additional_dungeon_loot"));
+		}
+		if(Arrays.asList(hill_3).contains(event.getName()))
+		{
+			event.getTable().addPool(getAdditive(Reference.modid + ":inject/hill_3", Reference.modid + "_additional_dungeon_loot"));
+		}
+		if(Arrays.asList(labyrinth_dead_end).contains(event.getName()))
+		{
+			event.getTable().addPool(getAdditive(Reference.modid + ":inject/labyrinth_dead_end", Reference.modid + "_additional_dungeon_loot"));
 		}
 	}
 
