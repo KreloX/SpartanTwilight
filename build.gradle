@@ -33,43 +33,14 @@ repositories {
 		name = "Twilight Forest Maven"
 		url = "https://modmaven.dev/"
 	}
-
     maven {
-        name 'progwm\'s Maven' // JEI + Mantle + TCon
-        url 'https://dvs1.progwml6.com/files/maven'
-    }
-    maven {
-        name 'tterrag\'s Maven' // CTM
-        url 'https://maven.tterrag.com/'
-}
-    maven {
-        name 'Jared\'s Maven' // Immersive Engineering + Patchouli
-        url 'https://blamejared.com/maven'
-    }
-    maven {
-        name 'player\'s Maven' // Forestry
-        url 'http://maven.ic2.player.to/'
-    }
-    maven {
-        name 'Curseforge Maven' // Baubles, Thaumcraft
+        name 'Curseforge Maven'
         url 'https://minecraft.curseforge.com/api/maven/'
     }
 
 }
 
 dependencies {
-
-
-    deobfCompile "mezz.jei:jei_${mc_version}:${jei_version}"
-    deobfCompile "slimeknights.mantle:Mantle:${mc_version_short}-${mantle_version}"
-    deobfCompile "slimeknights:TConstruct:${mc_version}-${tcon_version}"
-    deobfCompile "team.chisel.ctm:CTM:MC${mc_version}-${ctm_version}"
-    deobfCompile "team.chisel:Chisel:MC${mc_version}-${chisel_version}"
-    deobfCompile "blusunrize:ImmersiveEngineering:${immersive_engineering_version}"
-    deobfCompile "vazkii.patchouli:Patchouli:${patchouli_version}"
-    deobfCompile "net.sengir.forestry:forestry_${mc_version}:${forestry_version}"
-    deobfCompile "baubles:Baubles:${mc_version_short}:${baubles_version}"
-    deobfCompile "thaumcraft:Thaumcraft:${mc_version}:${thaumcraft_version}"
 
     deobfCompile "spartan-weaponry:SpartanWeaponry-1.12.2:beta:1.3.8"
 	deobfCompile "com.github.teamtwilight.twilightforest:twilightforest-${mc_version}:${tf_version}:universal"
