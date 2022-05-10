@@ -1,0 +1,150 @@
+{
+	// Weapons
+	
+		// Daggers
+		"item.spartantwilight.dagger_ironwood": "Ironwood Dagger",
+		"item.spartantwilight.dagger_fiery": "§eFiery Dagger",
+		"item.spartantwilight.dagger_knightly": "Knightmetal Dagger",
+		"item.spartantwilight.dagger_steeleaf": "Steeleaf Dagger",
+		
+		// Longsword
+		"item.spartantwilight.longsword_ironwood": "Ironwood Longsword",
+		"item.spartantwilight.longsword_fiery": "§eFiery Longsword",
+		"item.spartantwilight.longsword_knightly": "Knightmetal Longsword",
+		"item.spartantwilight.longsword_steeleaf": "Steeleaf Longsword",
+		
+		// Battleaxes
+		"item.spartantwilight.battleaxe_ironwood": "Ironwood Battleaxe",
+		"item.spartantwilight.battleaxe_fiery": "§eFiery Battleaxe",
+		"item.spartantwilight.battleaxe_knightly": "Knightmetal Battleaxe",
+		"item.spartantwilight.battleaxe_steeleaf": "Steeleaf Battleaxe",
+		
+		// Maces
+		"item.spartantwilight.flanged_mace_ironwood": "Ironwood Flanged Mace",
+		"item.spartantwilight.flanged_mace_fiery": "§eFiery Flanged Mace",
+		"item.spartantwilight.flanged_mace_knightly": "Knightmetal Flanged Mace",
+		"item.spartantwilight.flanged_mace_steeleaf": "Steeleaf Flanged Mace",
+		
+		// Glaives
+		"item.spartantwilight.glaive_ironwood": "Ironwood Glaive",
+		"item.spartantwilight.glaive_fiery": "§eFiery Glaive",
+		"item.spartantwilight.glaive_knightly": "Knightmetal Glaive",
+		"item.spartantwilight.glaive_steeleaf": "Steeleaf Glaive",
+		
+		// Halberds
+		"item.spartantwilight.halberd_ironwood": "Ironwood Halberd",
+		"item.spartantwilight.halberd_fiery": "§eFiery Halberd",
+		"item.spartantwilight.halberd_knightly": "Knightmetal Halberd",
+		"item.spartantwilight.halberd_steeleaf": "Steeleaf Halberd",
+		
+		// Battle Hammers
+		"item.spartantwilight.hammer_ironwood": "Ironwood Battle hammer",
+		"item.spartantwilight.hammer_fiery": "§eFiery Battle hammer",
+		"item.spartantwilight.hammer_knightly": "Knightmetal Battle hammer",
+		"item.spartantwilight.hammer_steeleaf": "Steeleaf Battle hammer",
+		
+		// Longbows
+		"item.spartantwilight.longbow_ironwood": "Ironwood-Strengthened Longbow",
+		"item.spartantwilight.longbow_fiery": "§eFiery-Strengthened Longbow",
+		"item.spartantwilight.longbow_knightly": "Knightmetal-Strengthened Longbow",
+		"item.spartantwilight.longbow_steeleaf": "Steeleaf-Strengthened Longbow",
+		
+		// Lances
+		"item.spartantwilight.lance_ironwood": "Ironwood Lance",
+		"item.spartantwilight.lance_fiery": "§eFiery Lance",
+		"item.spartantwilight.lance_knightly": "Knightmetal Lance",
+		"item.spartantwilight.lance_steeleaf": "Steeleaf Lance",
+		
+		// Pikes
+		"item.spartantwilight.pike_ironwood": "Ironwood Pike",
+		"item.spartantwilight.pike_fiery": "§eFiery Pike",
+		"item.spartantwilight.pike_knightly": "Knightmetal Pike",
+		"item.spartantwilight.pike_steeleaf": "Steeleaf Pike",
+		
+		// Quarterstaffs
+		"item.spartantwilight.quarterstaff_ironwood": "Ironwood Quarterstaff",
+		"item.spartantwilight.quarterstaff_fiery": "§eFiery Quarterstaff",
+		"item.spartantwilight.quarterstaff_knightly": "Knightmetal Quarterstaff",
+		"item.spartantwilight.quarterstaff_steeleaf": "Steeleaf Quarterstaff",
+		
+		// Rapiers
+		"item.spartantwilight.rapier_ironwood": "Ironwood Rapier",
+		"item.spartantwilight.rapier_fiery": "§eFiery Rapier",
+		"item.spartantwilight.rapier_knightly": "Knightmetal Rapier",
+		"item.spartantwilight.rapier_steeleaf": "Steeleaf Rapier",
+		
+		// Sabers
+		"item.spartantwilight.saber_ironwood": "Ironwood Saber",
+		"item.spartantwilight.saber_fiery": "§eFiery Saber",
+		"item.spartantwilight.saber_knightly": "Knightmetal Saber",
+		"item.spartantwilight.saber_steeleaf": "Steeleaf Saber",
+		
+		// Spears
+		"item.spartantwilight.spear_ironwood": "Ironwood Spear",
+		"item.spartantwilight.spear_fiery": "§eFiery Spear",
+		"item.spartantwilight.spear_knightly": "Knightmetal Spear",
+		"item.spartantwilight.spear_steeleaf": "Steeleaf Spear",
+		
+		// Warhammers
+		"item.spartantwilight.warhammer_ironwood": "Ironwood Warhammer",
+		"item.spartantwilight.warhammer_fiery": "§eFiery Warhammer",
+		"item.spartantwilight.warhammer_knightly": "Knightmetal Warhammer",
+		"item.spartantwilight.warhammer_steeleaf": "Steeleaf Warhammer",
+		
+		// Katanas
+		"item.spartantwilight.katana_ironwood": "Ironwood Katana",
+		"item.spartantwilight.katana_fiery": "§eFiery Katana",
+		"item.spartantwilight.katana_knightly": "Knightmetal Katana",
+		"item.spartantwilight.katana_steeleaf": "Steeleaf Katana",
+		
+		// Greatswords
+		"item.spartantwilight.greatsword_ironwood": "Ironwood Greatsword",
+		"item.spartantwilight.greatsword_fiery": "§eFiery Greatsword",
+		"item.spartantwilight.greatsword_knightly": "Knightmetal Greatsword",
+		"item.spartantwilight.greatsword_steeleaf": "Steeleaf Greatsword",
+		
+		// Boomerangs
+		"item.spartantwilight.boomerang_ironwood": "Ironwood Boomerang",
+		"item.spartantwilight.boomerang_fiery": "§eFiery Boomerang",
+		"item.spartantwilight.boomerang_knightly": "Knightmetal Boomerang",
+		"item.spartantwilight.boomerang_steeleaf": "Steeleaf Boomerang",
+		
+		// Crossbows
+		"item.spartantwilight.heavy_crossbow_ironwood": "Ironwood-Strengthened Heavy Crossbow",
+		"item.spartantwilight.heavy_crossbow_fiery": "§eFiery-Strengthened Heavy Crossbow",
+		"item.spartantwilight.heavy_crossbow_knightly": "Knightmetal-Strengthened Heavy Crossbow",
+		"item.spartantwilight.heavy_crossbow_steeleaf": "Steeleaf-Strengthened Heavy Crossbow",
+		
+		// Javelins
+		"item.spartantwilight.javelin_ironwood": "Ironwood Javelin",
+		"item.spartantwilight.javelin_fiery": "§eFiery Javelin",
+		"item.spartantwilight.javelin_knightly": "Knightmetal Javelin",
+		"item.spartantwilight.javelin_steeleaf": "Steeleaf Javelin",
+		
+		// Throwing Knives
+		"item.spartantwilight.throwing_knife_ironwood": "Ironwood Throwing Knife",
+		"item.spartantwilight.throwing_knife_fiery": "§eFiery Throwing Knife",
+		"item.spartantwilight.throwing_knife_knightly": "Knightmetal Throwing Knife",
+		"item.spartantwilight.throwing_knife_steeleaf": "Steeleaf Throwing Knife",
+		
+		// Tomahawks
+		"item.spartantwilight.tomahawk_ironwood": "Ironwood Tomahawk",
+		"item.spartantwilight.tomahawk_fiery": "§eFiery Tomahawk",
+		"item.spartantwilight.tomahawk_knightly": "Knightmetal Tomahawk",
+		"item.spartantwilight.tomahawk_steeleaf": "Steeleaf Tomahawk",
+	
+	// Tooltips
+	
+		// Fiery
+		"tooltip.spartantwilight.trait.fiery"= "Blazing",
+		"tooltip.spartantwilight.trait.fiery.desc": "Burns targets on hit",
+		
+		// Knightly
+		"tooltip.spartantwilight.trait.knightly"= "Combat Skilled",
+		"tooltip.spartantwilight.trait.knightly.desc": "Deals extra damage to armored targets",
+		
+	// Tabs
+		
+		// SWTF
+		"itemGroup.sw_twilight_forest": "Spartan Weaponry: Twilight Forest"
+}
