@@ -1,0 +1,41 @@
+{
+    "parent": "spartanweaponry:item/heavy_crossbow_wood",
+    "textures": {
+        "layer0": "spartantwilight:items/crossbow_ironwood_standby"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "pulling": 1
+            },
+            "model": "spartantwilight:item/heavy_crossbow_ironwood_pulling_0"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "pull": 0.65
+            },
+            "model": "spartantwilight:item/heavy_crossbow_ironwood_pulling_1"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "pull": 0.9
+            },
+            "model": "spartantwilight:item/heavy_crossbow_ironwood_pulling_2"
+        },
+        {
+            "predicate": {
+                "charged": 1
+            },
+            "model": "spartantwilight:item/heavy_crossbow_ironwood_loaded"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "charged": 1
+            },
+            "model": "spartantwilight:item/heavy_crossbow_ironwood_firing"
+        }
+    ]
+}
