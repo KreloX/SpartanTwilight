@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="MIT License"
+[[mods]] #mandatory
+modId="spartantwilight"
+version="1.16.5-2.2.1"
+displayName="Spartan Weaponry: Twilight Forest"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-twilight-forest"
+logoFile="logo.png"
+credits="Thanks to Benimatic for making The Twilight Forest and to ObliviousSpartan for making Spartan Weaponry"
+authors="KreloX"
+description='''
+
+Spicing up Spartan Weaponry by implementing materials from the magical world of Twilight Forest.
+
+'''
+[[dependencies.spartantwilight]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.spartantwilight]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
