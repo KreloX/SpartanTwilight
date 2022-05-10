@@ -1,63 +1,115 @@
 buildscript {
     repositories {
-        jcenter()
-        maven { url = "https://files.minecraftforge.net/maven" }
+        maven { url = 'https://maven.minecraftforge.net' }
+        mavenCentral()
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
     }
 }
-apply plugin: 'net.minecraftforge.gradle.forge'
-//Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
+apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
 
+version = '1.16.5-2.2.1'
+group = 'krelox.spartantwilight' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'spartantwilight'
 
-version = "${mc_version}-${mod_version}"
-group = "krelox.spartantwilight"
-archivesBaseName = "spartantwilight"
+java.toolchain.languageVersion = JavaLanguageVersion.of(8) // Mojang ships Java 8 to end users, so your mod should target Java 8.
 
-sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
-compileJava {
-    sourceCompatibility = targetCompatibility = '1.8'
-}
-
+println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
-    version = "${mc_version}-${forge_version}"
-    runDir = "run"
-    
-    mappings = "stable_39"
+    mappings channel: 'official', version: '1.16.5'
+    runs {
+        client {
+            workingDirectory project.file('run')
+            
+            property 'forge.logging.markers', 'REGISTRIES'
+            
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                spartantwilight {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                spartantwilight {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        data {
+            workingDirectory project.file('run')
+            
+            property 'forge.logging.markers', 'REGISTRIES'
+
+            property 'forge.logging.console.level', 'debug'
+
+            args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+
+            mods {
+                spartantwilight {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
 }
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-
 	maven {
-		name = "Twilight Forest Maven"
-		url = "https://modmaven.dev/"
-	}
-    maven {
-        name 'Curseforge Maven'
-        url 'https://minecraft.curseforge.com/api/maven/'
+        url = "https://modmaven.dev/" // Twilight Forest
     }
-
+    maven {
+        url "https://cursemaven.com"
+    }
 }
 
 dependencies {
-
-    deobfCompile "spartan-weaponry:SpartanWeaponry-1.12.2:beta:1.3.8"
-	deobfCompile "com.github.teamtwilight.twilightforest:twilightforest-${mc_version}:${tf_version}:universal"
-
+    minecraft 'net.minecraftforge:forge:1.16.5-36.2.8'
+    
+    implementation fg.deobf("teamtwilight:twilightforest:4.0.870:universal")
+    implementation fg.deobf("curse.maven:spartanweaponry-278141:3724434")
 }
 
-processResources {
-    inputs.property "version", project.version
-    inputs.property "mcversion", project.minecraft.version
-
-    from(sourceSets.main.resources.srcDirs) {
-        include 'mcmod.info'
-                
-        expand 'version':project.version, 'mcversion':project.minecraft.version
+jar {
+    manifest {
+        attributes([
+            "Specification-Title": "spartantwilight",
+            "Specification-Vendor": "KreloX",
+            "Specification-Version": "1",
+            "Implementation-Title": project.name,
+            "Implementation-Version": "${version}",
+            "Implementation-Vendor" :"KreloX",
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
     }
-        
-    from(sourceSets.main.resources.srcDirs) {
-        exclude 'mcmod.info'
+}
+
+jar.finalizedBy('reobfJar') 
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifact jar
+        }
+    }
+    repositories {
+        maven {
+            url "file:///${project.projectDir}/mcmodsrepo"
+        }
     }
 }
