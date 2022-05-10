@@ -1,0 +1,9 @@
+{"textures": {"layer0": "spartantwilight:items/throwing_axe_steeleaf"}, "parent": "spartanweaponry:item/tomahawk_wood",
+    "overrides": [
+        {
+            "predicate": {
+                "throwing": 1
+            },
+            "model": "spartantwilight:item/tomahawk_steeleaf_throwing"
+        }
+    ]}

@@ -1,0 +1,9 @@
+{"textures": {"layer0": "spartantwilight:items/throwing_knife_steeleaf"}, "parent": "spartanweaponry:item/throwing_knife_wood",
+    "overrides": [
+        {
+            "predicate": {
+                "throwing": 1
+            },
+            "model": "spartantwilight:item/throwing_knife_steeleaf_throwing"
+        }
+    ]}
