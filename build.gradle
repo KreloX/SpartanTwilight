@@ -42,7 +42,6 @@ repositories {
 
 dependencies {
 
-    deobfCompile "spartan-weaponry:SpartanWeaponry-1.12.2:beta:1.3.8"
 	deobfCompile "com.github.teamtwilight.twilightforest:twilightforest-${mc_version}:${tf_version}:universal"
 
 }
