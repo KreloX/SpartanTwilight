@@ -3,6 +3,7 @@ package krelox.spartantwilight.weaponproperty;
 import com.oblivioussp.spartanweaponry.api.ToolMaterialEx;
 import com.oblivioussp.spartanweaponry.api.weaponproperty.WeaponPropertyWithCallback;
 
+import krelox.spartantwilight.handler.ConfigHandlerST;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
@@ -10,7 +11,7 @@ import net.minecraft.util.DamageSource;
 
 public class FieryWeaponProperty extends WeaponPropertyWithCallback
 {
-	private static final int BONUS_DAMAGE = 4;
+	private static final int BONUS_DAMAGE = ConfigHandlerST.fiery_extra;
 	
 	public FieryWeaponProperty(String propType, String propModId) 
 	{
