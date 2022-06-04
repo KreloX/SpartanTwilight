@@ -9,6 +9,7 @@ import com.oblivioussp.spartanweaponry.api.weaponproperty.WeaponProperty;
 import com.oblivioussp.spartanweaponry.client.gui.CreativeTabsSW;
 import com.oblivioussp.spartanweaponry.util.ConfigHandler;
 
+import krelox.spartantwilight.handler.ConfigHandlerST;
 import krelox.spartantwilight.util.Reference;
 import krelox.spartantwilight.util.TFMatConverter;
 import krelox.spartantwilight.util.Utils;
@@ -38,31 +39,51 @@ public class ItemRegistryST
 
     public static final Set<Item> ALL_ITEMS = new HashSet<>();
     
-    static {
+    static 
+    {
         MATERIALS_TO_REGISTER.add(new TFMatConverter(IRONWOOD,
                 Utils.spartanMatFromToolMat(IRONWOOD, TFItems.TOOL_IRONWOOD,
-                9867904, 14999238, "ingotIronwood")));
+                9867904, 14999238, "ingotIronwood", ConfigHandlerST.ironwood_damage)));
         
-        MATERIALS_TO_REGISTER.add(new TFMatConverter(FIERY,
-                Utils.spartanMatFromToolMat(FIERY, TFItems.TOOL_FIERY,
-                9867904, 14999238, "ingotFiery"),
-                new FieryWeaponProperty(FIERY, Reference.modid)));
-        
-        MATERIALS_TO_REGISTER.add(new TFMatConverter(KNIGHTLY,
-                Utils.spartanMatFromToolMat(KNIGHTLY, TFItems.TOOL_KNIGHTLY,
-                        9867904, 14999238, "ingotKnightly"),
-        		new KnightlyWeaponProperty(KNIGHTLY, Reference.modid)));
-        
-        MATERIALS_TO_REGISTER.add(new TFMatConverter(STEELEAF,
-        		Utils.spartanMatFromToolMat(STEELEAF, TFItems.TOOL_STEELEAF,
-                        9867904, 14999238, "ingotSteeleaf"),
-                new SteeleafWeaponProperty(STEELEAF, Reference.modid)));
-
+    	if(ConfigHandlerST.fiery == true) 
+    	{
+	        MATERIALS_TO_REGISTER.add(new TFMatConverter(FIERY,
+	                Utils.spartanMatFromToolMat(FIERY, TFItems.TOOL_FIERY,
+	                9867904, 14999238, "ingotFiery", ConfigHandlerST.fiery_damage),
+	                new FieryWeaponProperty(FIERY, Reference.modid)));
+    	} else {
+	        MATERIALS_TO_REGISTER.add(new TFMatConverter(FIERY,
+	                Utils.spartanMatFromToolMat(FIERY, TFItems.TOOL_FIERY,
+	                9867904, 14999238, "ingotFiery", ConfigHandlerST.fiery_damage)));
+    	}
+    	
+    	if(ConfigHandlerST.knightly == true) 
+    	{
+	        MATERIALS_TO_REGISTER.add(new TFMatConverter(KNIGHTLY,
+	                Utils.spartanMatFromToolMat(KNIGHTLY, TFItems.TOOL_KNIGHTLY,
+	                        9867904, 14999238, "ingotKnightly", ConfigHandlerST.knightly_damage),
+	        		new KnightlyWeaponProperty(KNIGHTLY, Reference.modid)));
+	    } else {
+	    	MATERIALS_TO_REGISTER.add(new TFMatConverter(KNIGHTLY,
+	                Utils.spartanMatFromToolMat(KNIGHTLY, TFItems.TOOL_KNIGHTLY,
+	                        9867904, 14999238, "ingotKnightly", ConfigHandlerST.knightly_damage)));
+	    }
+	        
+    	if(ConfigHandlerST.steeleaf == true) {
+	        MATERIALS_TO_REGISTER.add(new TFMatConverter(STEELEAF,
+	        		Utils.spartanMatFromToolMat(STEELEAF, TFItems.TOOL_STEELEAF,
+	                        9867904, 14999238, "ingotSteeleaf", ConfigHandlerST.steeleaf_damage),
+	                new SteeleafWeaponProperty(STEELEAF, Reference.modid)));
+        } else {
+	        MATERIALS_TO_REGISTER.add(new TFMatConverter(STEELEAF,
+	        		Utils.spartanMatFromToolMat(STEELEAF, TFItems.TOOL_STEELEAF,
+	                        9867904, 14999238, "ingotSteeleaf", ConfigHandlerST.steeleaf_damage)));
+        }
     }
 
-
     @SubscribeEvent
-    public static void registerItems(RegistryEvent.Register<Item> ev) {
+    public static void registerItems(RegistryEvent.Register<Item> ev) 
+    {
 
         Set<Item> item_set = new LinkedHashSet<>();
         for (TFMatConverter mat : MATERIALS_TO_REGISTER){
@@ -293,8 +314,15 @@ public class ItemRegistryST
                 ModelRenderRegistryST.addItemToRegistry(glaive, "glaive_" + mat.material.getUnlocName());
                 item_set.add(glaive);
             }
-            if (ConfigHandler.enableExperimentalWeapons && !ConfigHandler.disableParryingDagger){
-                //empty method for now till a create parrying dagger method is created
+            if (!ConfigHandler.disableParryingDagger){
+            	Item parrying_dagger = SpartanWeaponryAPI.createParryingDagger(
+                        mat.material,
+                        Reference.modid,
+                        CreativeTabsSW.TAB_SW_MOD,
+                        mat.properties.toArray(new WeaponProperty[0])
+                );
+                ModelRenderRegistryST.addItemToRegistry(parrying_dagger, "parrying_dagger_" + mat.material.getUnlocName());
+                item_set.add(parrying_dagger);
             }
         }
         for (Item it : item_set){
