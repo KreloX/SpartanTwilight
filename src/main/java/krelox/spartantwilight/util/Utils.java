@@ -23,21 +23,5 @@ public class Utils
 				material.getAttackDamage(),
 				material.getEnchantability());
 	}
-
-	public static ToolMaterialEx spartanMatFromToolMat(String name, Item.ToolMaterial material,
-            int color1, int color2)
-	{
-		return new ToolMaterialEx(
-				name,
-				"ingot" + StringUtils.capitalize(name),
-				Reference.modid,
-				color1,
-				color2,
-				material.getHarvestLevel(),
-				material.getMaxUses(),
-				material.getEfficiency(),
-				material.getAttackDamage(),
-				material.getEnchantability());
-	}
 }
 
