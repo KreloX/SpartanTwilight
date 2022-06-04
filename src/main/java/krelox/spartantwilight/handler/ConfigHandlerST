@@ -1,0 +1,57 @@
+package krelox.spartantwilight.handler;
+
+import java.io.File;
+
+import krelox.spartantwilight.util.Reference;
+import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+
+public class ConfigHandlerST 
+{
+	public static Configuration config;
+
+	public static boolean fiery;
+	public static boolean knightly;
+	public static boolean steeleaf;
+
+	public static int fiery_extra = 3;
+	public static int knightly_extra = 2;
+	public static int steeleaf_timer = 400;
+
+	public static float ironwood_damage = 2.0F;
+	public static float fiery_damage = 4.0F;
+	public static float knightly_damage = 3.0F;
+	public static float steeleaf_damage = 3.0F;
+	
+	public static void init(File file) 
+	{
+		config = new Configuration(file);
+		String properties;
+		String damage;
+		
+		properties = "Weapon Properties";
+
+		fiery = config.getBoolean("'Feeding The Flames' trait", properties, true, "Set this to false to disable the fiery weapons' trait.");
+		fiery_extra = config.getInt("'Feeding The Flames' damage", properties, 3, 1, 100, "Extra damage dealt by the fiery weapons' trait");
+		
+		knightly = config.getBoolean("'Combat Skilled' trait", properties, true, "Set this to false to disable the knightly weapons' trait.");
+		knightly_extra = config.getInt("'Combat Skilled' damage", properties, 2, 1, 100, "Extra damage dealt by the knightly weapons' trait");
+		
+		steeleaf = config.getBoolean("'One With The Forest' trait", properties, true, "Set this to false to disable the steeleaf weapons' trait.");
+		steeleaf_timer = config.getInt("'One With The Forest' timer", properties, 400, 1, 1000000, "Delay in ticks between the steeleaf weapons' trait's individual repairs");
+		
+		damage = "Weapon Base Damage";
+
+		ironwood_damage = config.getFloat("Ironwood base damage", damage, (float) 2.0, (float) 0.1, (float) 1000.0, "Base damage for all ironwood spartan weapons");
+		fiery_damage = config.getFloat("Fiery base damage", damage, (float) 4.0, (float) 0.1, (float) 1000.0, "Base damage for all fiery spartan weapons");
+		knightly_damage = config.getFloat("Knightly base damage", damage, (float) 3.0, (float) 0.1, (float) 1000.0, "Base damage for all knightly spartan weapons");
+		steeleaf_damage = config.getFloat("Steeleaf base damage", damage, (float) 3.0, (float) 0.1, (float) 1000.0, "Base damage for all steeleaf spartan weapons");
+	
+		config.save();
+	}
+	
+	public static void registerConfig(FMLPreInitializationEvent event) 
+	{
+		init(new File(event.getModConfigurationDirectory(), Reference.modid + ".cfg"));
+	}
+}
