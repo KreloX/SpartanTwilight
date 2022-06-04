@@ -1,6 +1,7 @@
 package krelox.spartantwilight;
 
-import krelox.spartantwilight.loot.LootHandler;
+import krelox.spartantwilight.handler.ConfigHandlerST;
+import krelox.spartantwilight.handler.LootHandlerST;
 import krelox.spartantwilight.util.Reference;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -11,11 +12,11 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class SpartanTwilight 
 {
-
 	@EventHandler
     public void preInit(FMLPreInitializationEvent event) 
 	{
-		LootHandler.register();
+		LootHandlerST.register();
+		ConfigHandlerST.registerConfig(event);
 	}
 	
 	@EventHandler
