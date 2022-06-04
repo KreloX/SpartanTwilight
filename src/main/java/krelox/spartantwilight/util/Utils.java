@@ -9,7 +9,8 @@ import net.minecraft.item.Item;
 public class Utils 
 {
 	public static ToolMaterialEx spartanMatFromToolMat(String name, Item.ToolMaterial material,
-            										int color1, int color2, String repairName)
+            										int color1, int color2, String repairName,
+            										float attackDamage)
 	{
 		return new ToolMaterialEx(
 				name,
@@ -20,7 +21,7 @@ public class Utils
 				material.getHarvestLevel(),
 				material.getMaxUses(),
 				material.getEfficiency(),
-				material.getAttackDamage(),
+				attackDamage,
 				material.getEnchantability());
 	}
 }
