@@ -1,0 +1,23 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:lance_iron"
+    },
+    {
+      "item": "minecraft:blaze_rod"
+    },
+    {
+      "item": "spartantwilight:blaze_pole"
+    },
+    {
+      "item": "twilightforest:fiery_tears"
+    }
+  ],
+  "result": {
+    "nbt": "{ench:[{lvl:2s,id:20s}]}",
+    "item": "spartantwilight:lance_fiery",
+    "type": "minecraft:item_nbt"
+  }
+}

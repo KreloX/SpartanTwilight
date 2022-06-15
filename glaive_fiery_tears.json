@@ -1,0 +1,26 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:glaive_iron"
+    },
+    {
+      "item": "spartantwilight:blaze_pole"
+    },
+    {
+      "item": "twilightforest:fiery_tears"
+    },
+    {
+      "item": "twilightforest:fiery_tears"
+    },
+    {
+      "item": "twilightforest:fiery_tears"
+    }
+  ],
+  "result": {
+    "nbt": "{ench:[{lvl:2s,id:20s}]}",
+    "item": "spartantwilight:glaive_fiery",
+    "type": "minecraft:item_nbt"
+  }
+}

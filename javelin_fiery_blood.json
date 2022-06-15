@@ -1,0 +1,20 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:javelin_iron"
+    },
+    {
+      "item": "spartantwilight:blaze_pole"
+    },
+    {
+      "item": "twilightforest:fiery_blood"
+    }
+  ],
+  "result": {
+    "nbt": "{ench:[{lvl:1s,id:13s}]}",
+    "item": "spartantwilight:javelin_fiery",
+    "type": "minecraft:item_nbt"
+  }
+}

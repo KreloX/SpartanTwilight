@@ -1,0 +1,35 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:greatsword_iron"
+    },
+    {
+      "item": "minecraft:blaze_rod"
+    },
+    {
+      "item": "twilightforest:fiery_blood"
+    },
+    {
+      "item": "twilightforest:fiery_blood"
+    },
+    {
+      "item": "twilightforest:fiery_blood"
+    },
+    {
+      "item": "twilightforest:fiery_blood"
+    },
+    {
+      "item": "twilightforest:fiery_blood"
+    },
+    {
+      "item": "twilightforest:fiery_blood"
+    }
+  ],
+  "result": {
+    "nbt": "{ench:[{lvl:2s,id:20s}]}",
+    "item": "spartantwilight:greatsword_fiery",
+    "type": "minecraft:item_nbt"
+  }
+}

@@ -1,0 +1,20 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:spear_iron"
+    },
+    {
+      "item": "spartantwilight:blaze_pole"
+    },
+    {
+      "item": "twilightforest:fiery_tears"
+    }
+  ],
+  "result": {
+    "nbt": "{ench:[{lvl:2s,id:20s}]}",
+    "item": "spartantwilight:spear_fiery",
+    "type": "minecraft:item_nbt"
+  }
+}

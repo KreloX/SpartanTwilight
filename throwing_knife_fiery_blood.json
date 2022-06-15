@@ -1,0 +1,20 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:throwing_knife_iron"
+    },
+    {
+      "item": "minecraft:blaze_rod"
+    },
+    {
+      "item": "twilightforest:fiery_blood"
+    }
+  ],
+  "result": {
+    "nbt": "{ench:[{lvl:1s,id:13s}]}",
+    "item": "spartantwilight:throwing_knife_fiery",
+    "type": "minecraft:item_nbt"
+  }
+}

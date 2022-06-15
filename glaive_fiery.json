@@ -1,0 +1,23 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " m",
+	" m",
+	"mh"
+  ],
+  "key": {
+    "m": {
+      "type": "forge:ore_dict",
+	  "ore": "ingotFiery"
+    },
+    "h": {
+      "item": "spartantwilight:blaze_pole"
+    }
+  },
+  "result": {
+    "nbt": "{ench:[{lvl:2s,id:20s}]}",
+    "item": "spartantwilight:glaive_fiery",
+    "type": "minecraft:item_nbt"
+  }
+}

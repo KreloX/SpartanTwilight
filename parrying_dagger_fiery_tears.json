@@ -1,0 +1,23 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:parrying_dagger_iron"
+    },
+    {
+      "item": "minecraft:blaze_rod"
+    },
+    {
+      "item": "twilightforest:fiery_tears"
+    },
+    {
+      "item": "twilightforest:fiery_tears"
+    }
+  ],
+  "result": {
+    "nbt": "{ench:[{lvl:2s,id:20s}]}",
+    "item": "spartantwilight:parrying_dagger_fiery",
+    "type": "minecraft:item_nbt"
+  }
+}
