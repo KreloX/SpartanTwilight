@@ -13,11 +13,13 @@ import krelox.spartantwilight.handler.ConfigHandlerST;
 import krelox.spartantwilight.util.Reference;
 import krelox.spartantwilight.util.TFMatConverter;
 import krelox.spartantwilight.util.Utils;
+import krelox.spartantwilight.util.ItemST;
 import krelox.spartantwilight.weaponproperty.FieryWeaponProperty;
 import krelox.spartantwilight.weaponproperty.KnightlyWeaponProperty;
 import krelox.spartantwilight.weaponproperty.SteeleafWeaponProperty;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
@@ -84,8 +86,12 @@ public class ItemRegistryST
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> ev) 
     {
-
         Set<Item> item_set = new LinkedHashSet<>();
+        
+        Item blazePole = new ItemST(new ResourceLocation(Reference.modid, "blaze_pole"),
+        		CreativeTabsSW.TAB_SW_MOD);
+        ALL_ITEMS.add(blazePole);
+        
         for (TFMatConverter mat : MATERIALS_TO_REGISTER){
             if (!ConfigHandler.disableKatana){
                 Item katana = SpartanWeaponryAPI.createKatana(
