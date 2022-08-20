@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spartanweaponry:glaive",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:glaive_iron"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "item": "spartantwilight:blaze_pole"
+    }
+  ],
+  "result": {
+    "item": "spartantwilight:glaive_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "glaive"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

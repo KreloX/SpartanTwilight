@@ -1,0 +1,34 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:battleaxe",
+  "pattern": [
+    "mmm",
+	"msm",
+	" h "
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/ironwood"
+    },
+    "h": {
+      "item": "spartanweaponry:handle"
+    },
+	"s": {
+      "tag": "forge:rods/wooden"
+	}
+  },
+  "result": {
+    "nbt": "{Enchantments:[{lvl:1s,id:\"minecraft:knockback\"},{lvl:1s,id:\"minecraft:fortune\"}]}",
+    "item": "spartantwilight:battleaxe_ironwood",
+    "type": "minecraft:item_nbt"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "battleaxe"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

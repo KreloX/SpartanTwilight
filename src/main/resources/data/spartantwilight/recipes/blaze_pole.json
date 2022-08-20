@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:pole",
+  "pattern": [
+    " b",
+    "b "
+  ],
+  "key": {
+    "b": {
+      "tag": "forge:rods/blaze"
+    }
+  },
+  "result": {
+    "item": "spartantwilight:blaze_pole"
+  }
+}

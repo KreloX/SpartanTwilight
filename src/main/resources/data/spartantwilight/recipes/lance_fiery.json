@@ -1,0 +1,32 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:lance",
+  "pattern": [
+    "  m",
+	"mp ",
+	"hm "
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/fiery"
+    },
+    "p": {
+      "item": "spartantwilight:blaze_pole"
+	},
+  	"h": {
+      "item": "spartanweaponry:handle"
+    }
+  },
+  "result": {
+    "item": "spartantwilight:lance_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "lance"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

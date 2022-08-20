@@ -1,0 +1,34 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:lance",
+  "pattern": [
+    "  m",
+	"mp ",
+	"hm "
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/steeleaf"
+    },
+    "h": {
+      "item": "spartanweaponry:handle"
+    },
+    "p": {
+      "item": "spartanweaponry:pole"
+    }
+  },
+  "result": {
+    "nbt": "{Enchantments:[{lvl:2s,id:\"minecraft:looting\"}]}",
+    "item": "spartantwilight:lance_steeleaf",
+    "type": "minecraft:item_nbt"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "lance"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

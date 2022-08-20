@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spartanweaponry:heavy_crossbow",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:heavy_crossbow_iron"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "forge:rods/blaze"
+    }
+  ],
+  "result": {
+    "nbt": "{Enchantments:[{lvl:2s,id:\"minecraft:flame\"}]}",
+    "item": "spartantwilight:heavy_crossbow_fiery",
+    "type": "minecraft:item_nbt"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "heavy_crossbow"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

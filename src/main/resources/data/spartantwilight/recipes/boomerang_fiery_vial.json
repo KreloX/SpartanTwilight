@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spartanweaponry:boomerang",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:boomerang_iron"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    }
+  ],
+  "result": {
+    "item": "spartantwilight:boomerang_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "boomerang"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

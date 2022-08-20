@@ -1,0 +1,29 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:greatsword",
+  "pattern": [
+    " m ",
+	"mmm",
+	"mhm"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/fiery"
+    },
+    "h": {
+      "tag": "forge:rods/blaze"
+	}
+  },
+  "result": {
+    "item": "spartantwilight:greatsword_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "greatsword"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:heavy_crossbow",
+  "pattern": [
+    "ibi",
+    "pkp",
+    " h "
+  ],
+  "key": {
+    "i": {
+      "tag": "forge:ingots/fiery"
+    },
+    "h": {
+      "tag": "forge:rods/blaze"
+	},
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "b": {
+      "item": "minecraft:bow"
+    },
+    "k": {
+      "item": "minecraft:tripwire_hook"
+    }
+  },
+  "result": {
+    "nbt": "{Enchantments:[{lvl:2s,id:\"minecraft:flame\"}]}",
+    "item": "spartantwilight:heavy_crossbow_fiery",
+    "type": "minecraft:item_nbt"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "heavy_crossbow"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

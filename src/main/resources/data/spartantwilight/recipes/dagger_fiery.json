@@ -1,0 +1,28 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:dagger",
+  "pattern": [
+    "m",
+	"s"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/fiery"
+    },
+	"s": {
+      "tag": "forge:rods/blaze"
+	}
+  },
+  "result": {
+    "item": "spartantwilight:dagger_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "dagger"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

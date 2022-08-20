@@ -1,0 +1,27 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:javelin",
+  "pattern": [
+	"hm"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/fiery"
+    },
+	"h": {
+      "item": "spartantwilight:blaze_pole"
+	}
+  },
+  "result": {
+    "item": "spartantwilight:javelin_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "javelin"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}
