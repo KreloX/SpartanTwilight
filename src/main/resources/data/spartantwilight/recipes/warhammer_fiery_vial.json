@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spartanweaponry:warhammer",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:warhammer_iron"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "forge:rods/blaze"
+    }
+  ],
+  "result": {
+    "item": "spartantwilight:warhammer_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "warhammer"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

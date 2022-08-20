@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spartanweaponry:pike",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:pike_iron"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "item": "spartantwilight:blaze_pole"
+    },
+    {
+      "item": "spartantwilight:blaze_pole"
+    }
+  ],
+  "result": {
+    "item": "spartantwilight:pike_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "pike"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

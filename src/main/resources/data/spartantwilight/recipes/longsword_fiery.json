@@ -1,0 +1,29 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:longsword",
+  "pattern": [
+    " m ",
+	" m ",
+	"mhm"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/fiery"
+    },
+    "h": {
+      "tag": "forge:rods/blaze"
+	}
+  },
+  "result": {
+    "item": "spartantwilight:longsword_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "longsword"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

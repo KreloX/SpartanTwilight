@@ -1,0 +1,30 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:tomahawk",
+  "pattern": [
+    "hm",
+	" m"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/steeleaf"
+    },
+    "h": {
+      "item": "spartanweaponry:handle"
+    }
+  },
+  "result": {
+    "nbt": "{Enchantments:[{lvl:2s,id:\"spartanweaponry:throwing_luck\"}]}",
+    "item": "spartantwilight:tomahawk_steeleaf",
+    "type": "minecraft:item_nbt"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "tomahawk"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

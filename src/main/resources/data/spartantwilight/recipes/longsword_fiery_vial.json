@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spartanweaponry:longsword",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:longsword_iron"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "forge:rods/blaze"
+    }
+  ],
+  "result": {
+    "item": "spartantwilight:longsword_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "longsword"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spartanweaponry:quarterstaff",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:quarterstaff_iron"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "item": "spartantwilight:blaze_pole"
+    }
+  ],
+  "result": {
+    "item": "spartantwilight:quarterstaff_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "quarterstaff"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

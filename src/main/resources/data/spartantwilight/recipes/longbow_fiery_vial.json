@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spartanweaponry:longbow",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:longbow_iron"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "forge:rods/blaze"
+    }
+  ],
+  "result": {
+    "nbt": "{Enchantments:[{lvl:2s,id:\"minecraft:flame\"}]}",
+    "item": "spartantwilight:longbow_fiery",
+    "type": "minecraft:item_nbt"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "longbow"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

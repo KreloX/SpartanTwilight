@@ -1,0 +1,28 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:tomahawk",
+  "pattern": [
+    "hm",
+	" m"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/fiery"
+    },
+	"h": {
+      "tag": "forge:rods/blaze"
+	}
+  },
+  "result": {
+    "item": "spartantwilight:tomahawk_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "tomahawk"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

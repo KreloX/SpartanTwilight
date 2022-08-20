@@ -1,0 +1,31 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:pike",
+  "pattern": [
+    "m",
+	"p",
+	"p"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/steeleaf"
+    },
+    "p": {
+      "item": "spartanweaponry:pole"
+    }
+  },
+  "result": {
+    "nbt": "{Enchantments:[{lvl:2s,id:\"minecraft:looting\"}]}",
+    "item": "spartantwilight:pike_steeleaf",
+    "type": "minecraft:item_nbt"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "pike"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

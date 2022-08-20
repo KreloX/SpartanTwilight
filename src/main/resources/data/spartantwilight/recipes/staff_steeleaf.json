@@ -1,0 +1,31 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:quarterstaff",
+  "pattern": [
+    "  m",
+	" p ",
+	"m  "
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/steeleaf"
+    },
+    "p": {
+      "item": "spartanweaponry:pole"
+    }
+  },
+  "result": {
+    "nbt": "{Enchantments:[{lvl:2s,id:\"minecraft:looting\"}]}",
+    "item": "spartantwilight:quarterstaff_steeleaf",
+    "type": "minecraft:item_nbt"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "quarterstaff"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

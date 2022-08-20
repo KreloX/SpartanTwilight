@@ -1,0 +1,29 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:warhammer",
+  "pattern": [
+    " m",
+	"mm",
+	" h"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/knightmetal"
+    },
+    "h": {
+      "item": "spartanweaponry:handle"
+    }
+  },
+  "result": {
+    "item": "spartantwilight:warhammer_knightly"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "warhammer"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

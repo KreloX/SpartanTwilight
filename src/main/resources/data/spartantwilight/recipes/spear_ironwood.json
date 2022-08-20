@@ -1,0 +1,30 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:spear",
+  "pattern": [
+    "m",
+	"p"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/ironwood"
+    },
+    "p": {
+      "item": "spartanweaponry:pole"
+    }
+  },
+  "result": {
+    "nbt": "{Enchantments:[{lvl:1s,id:\"minecraft:knockback\"}]}",
+    "item": "spartantwilight:spear_ironwood",
+    "type": "minecraft:item_nbt"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "spear"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

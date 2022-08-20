@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spartanweaponry:throwing_knife",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:throwing_knife_iron"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "forge:rods/blaze"
+    }
+  ],
+  "result": {
+    "item": "spartantwilight:throwing_knife_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "throwing_knife"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:spear",
+  "pattern": [
+    "m",
+	"p"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/knightmetal"
+    },
+    "p": {
+      "item": "spartanweaponry:pole"
+    }
+  },
+  "result": {
+    "item": "spartantwilight:spear_knightly"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "spear"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

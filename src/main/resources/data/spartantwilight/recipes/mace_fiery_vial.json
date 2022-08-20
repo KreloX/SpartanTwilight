@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spartanweaponry:flanged_mace",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:flanged_mace_iron"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "forge:rods/blaze"
+    }
+  ],
+  "result": {
+    "item": "spartantwilight:flanged_mace_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "flanged_mace"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

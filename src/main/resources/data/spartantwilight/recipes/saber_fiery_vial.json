@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spartanweaponry:saber",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:saber_iron"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "forge:rods/blaze"
+    }
+  ],
+  "result": {
+    "item": "spartantwilight:saber_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "saber"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

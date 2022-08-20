@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spartanweaponry:tomahawk",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:tomahawk_iron"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "forge:rods/blaze"
+    }
+  ],
+  "result": {
+    "item": "spartantwilight:tomahawk_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "tomahawk"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

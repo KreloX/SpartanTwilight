@@ -1,0 +1,37 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:longbow",
+  "pattern": [
+    "htm",
+	"t s",
+	"mss"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/ironwood"
+    },
+    "h": {
+      "item": "spartanweaponry:handle"
+    },
+	"s": {
+      "tag": "forge:string"
+	},
+	"t": {
+      "tag": "forge:rods/wooden"
+	}
+  },
+  "result": {
+    "nbt": "{Enchantments:[{lvl:1s,id:\"minecraft:punch\"}]}",
+    "item": "spartantwilight:longbow_ironwood",
+    "type": "minecraft:item_nbt"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "longbow"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

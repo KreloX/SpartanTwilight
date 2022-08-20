@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spartanweaponry:rapier",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:rapier_iron"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "tag": "forge:rods/blaze"
+    }
+  ],
+  "result": {
+    "item": "spartantwilight:rapier_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "rapier"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

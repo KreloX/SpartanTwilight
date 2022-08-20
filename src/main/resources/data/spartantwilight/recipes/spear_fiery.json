@@ -1,0 +1,28 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:spear",
+  "pattern": [
+    "m",
+	"p"
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/fiery"
+    },
+    "p": {
+      "item": "spartantwilight:blaze_pole"
+	}
+  },
+  "result": {
+    "item": "spartantwilight:spear_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "spear"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

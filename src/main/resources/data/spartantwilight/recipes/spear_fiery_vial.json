@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "spartanweaponry:spear",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:spear_iron"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    },
+    {
+      "item": "spartantwilight:blaze_pole"
+    }
+  ],
+  "result": {
+    "item": "spartantwilight:spear_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "spear"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

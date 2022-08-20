@@ -1,0 +1,32 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:flanged_mace",
+  "pattern": [
+    " mm",
+	" sm",
+	"h  "
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/fiery"
+    },
+    "h": {
+      "tag": "forge:rods/blaze"
+	},
+    "s": {
+      "tag": "forge:rods/wooden"
+	}
+  },
+  "result": {
+    "item": "spartantwilight:flanged_mace_fiery"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "flanged_mace"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

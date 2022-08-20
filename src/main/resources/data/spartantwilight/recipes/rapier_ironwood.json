@@ -1,0 +1,31 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:rapier",
+  "pattern": [
+    "  m",
+	"mm ",
+	"hm "
+  ],
+  "key": {
+    "m": {
+      "tag": "forge:ingots/ironwood"
+    },
+    "h": {
+      "item": "spartanweaponry:handle"
+    }
+  },
+  "result": {
+    "nbt": "{Enchantments:[{lvl:1s,id:\"minecraft:knockback\"}]}",
+    "item": "spartantwilight:rapier_ironwood",
+    "type": "minecraft:item_nbt"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "rapier"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}
