@@ -1,19 +1,14 @@
 
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "mw ",
-	"   ",
-	"   "
-  ],
-  "key": {
-    "m": {
-      "item": "twilightforest:fiery_blood"
-    },
-    "w": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "spartanweaponry:boomerang_iron"
+    },
+    {
+      "item": "twilightforest:fiery_blood"
     }
-  },
+  ],
   "result": {
     "nbt": "{ench:[{lvl:1s,id:13s}]}",
     "item": "spartantwilight:boomerang_fiery",

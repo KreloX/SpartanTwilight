@@ -1,22 +1,17 @@
 
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "mwh",
-	"   ",
-	"   "
-  ],
-  "key": {
-    "m": {
-      "item": "twilightforest:fiery_tears"
-    },
-    "h": {
-      "item": "minecraft:blaze_rod"
-    },
-    "w": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "spartanweaponry:staff_iron"
+    },
+    {
+      "item": "spartantwilight:blaze_pole"
+    },
+    {
+      "item": "twilightforest:fiery_tears"
     }
-  },
+  ],
   "result": {
     "nbt": "{ench:[{lvl:2s,id:20s}]}",
     "item": "spartantwilight:staff_fiery",

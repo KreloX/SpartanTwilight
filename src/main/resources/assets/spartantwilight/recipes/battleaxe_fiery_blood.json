@@ -1,22 +1,32 @@
 
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "mmm",
-	"mmw",
-	"hh "
-  ],
-  "key": {
-    "m": {
-      "item": "twilightforest:fiery_blood"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:battleaxe_iron"
     },
-    "h": {
+    {
       "item": "minecraft:blaze_rod"
     },
-    "w": {
-      "item": "spartanweaponry:battleaxe_iron"
+    {
+      "item": "minecraft:blaze_rod"
+    },
+    {
+      "item": "twilightforest:fiery_blood"
+    },
+    {
+      "item": "twilightforest:fiery_blood"
+    },
+    {
+      "item": "twilightforest:fiery_blood"
+    },
+    {
+      "item": "twilightforest:fiery_blood"
+    },
+    {
+      "item": "twilightforest:fiery_blood"
     }
-  },
+  ],
   "result": {
     "nbt": "{ench:[{lvl:2s,id:20s}]}",
     "item": "spartantwilight:battleaxe_fiery",

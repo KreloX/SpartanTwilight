@@ -2,9 +2,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " p ",
-	" m ",
-	"   "
+    "p",
+	"m"
   ],
   "key": {
     "m": {
@@ -12,7 +11,7 @@
 	  "ore": "ingotFiery"
     },
     "p": {
-      "item": "minecraft:blaze_rod"
+      "item": "spartantwilight:blaze_pole"
     }
   },
   "result": {

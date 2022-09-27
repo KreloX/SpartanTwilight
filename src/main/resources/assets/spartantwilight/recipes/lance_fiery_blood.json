@@ -1,22 +1,20 @@
 
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "mwh",
-	"   ",
-	"   "
-  ],
-  "key": {
-    "m": {
-      "item": "twilightforest:fiery_blood"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:lance_iron"
     },
-    "h": {
+    {
       "item": "minecraft:blaze_rod"
     },
-    "w": {
-      "item": "spartanweaponry:lance_iron"
+    {
+      "item": "spartantwilight:blaze_pole"
+    },
+    {
+      "item": "twilightforest:fiery_blood"
     }
-  },
+  ],
   "result": {
     "nbt": "{ench:[{lvl:2s,id:20s}]}",
     "item": "spartantwilight:lance_fiery",

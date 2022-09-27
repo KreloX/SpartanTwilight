@@ -2,9 +2,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " m ",
-	" p ",
-	" p "
+    "m",
+	"p",
+	"p"
   ],
   "key": {
     "m": {

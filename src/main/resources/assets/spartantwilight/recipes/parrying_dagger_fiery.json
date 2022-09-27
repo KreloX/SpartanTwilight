@@ -2,9 +2,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "mmm",
-	"mhm",
-	" h "
+    " m",
+	"mh"
   ],
   "key": {
     "m": {
@@ -17,7 +16,7 @@
   },
   "result": {
     "nbt": "{ench:[{lvl:2s,id:20s}]}",
-    "item": "spartantwilight:battleaxe_fiery",
+    "item": "spartantwilight:parrying_dagger_fiery",
     "type": "minecraft:item_nbt"
   }
 }

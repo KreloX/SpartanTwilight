@@ -1,22 +1,17 @@
 
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "mwh",
-	"   ",
-	"   "
-  ],
-  "key": {
-    "m": {
-      "item": "twilightforest:fiery_tears"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:throwing_knife_iron"
     },
-    "h": {
+    {
       "item": "minecraft:blaze_rod"
     },
-    "w": {
-      "item": "spartanweaponry:throwing_knife_iron"
+    {
+      "item": "twilightforest:fiery_tears"
     }
-  },
+  ],
   "result": {
     "nbt": "{ench:[{lvl:1s,id:13s}]}",
     "item": "spartantwilight:throwing_knife_fiery",

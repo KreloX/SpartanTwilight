@@ -1,22 +1,32 @@
 
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "mmm",
-	"mmm",
-	"wh "
-  ],
-  "key": {
-    "m": {
-      "item": "twilightforest:fiery_tears"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:greatsword_iron"
     },
-    "h": {
+    {
       "item": "minecraft:blaze_rod"
     },
-    "w": {
-      "item": "spartanweaponry:greatsword_iron"
+    {
+      "item": "twilightforest:fiery_tears"
+    },
+    {
+      "item": "twilightforest:fiery_tears"
+    },
+    {
+      "item": "twilightforest:fiery_tears"
+    },
+    {
+      "item": "twilightforest:fiery_tears"
+    },
+    {
+      "item": "twilightforest:fiery_tears"
+    },
+    {
+      "item": "twilightforest:fiery_tears"
     }
-  },
+  ],
   "result": {
     "nbt": "{ench:[{lvl:2s,id:20s}]}",
     "item": "spartantwilight:greatsword_fiery",

@@ -1,22 +1,23 @@
 
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "mmm",
-	"whh",
-	"   "
-  ],
-  "key": {
-    "m": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:glaive_iron"
+    },
+    {
+      "item": "spartantwilight:blaze_pole"
+    },
+    {
       "item": "twilightforest:fiery_blood"
     },
-    "h": {
-      "item": "minecraft:blaze_rod"
+    {
+      "item": "twilightforest:fiery_blood"
     },
-    "w": {
-      "item": "spartanweaponry:glaive_iron"
+    {
+      "item": "twilightforest:fiery_blood"
     }
-  },
+  ],
   "result": {
     "nbt": "{ench:[{lvl:2s,id:20s}]}",
     "item": "spartantwilight:glaive_fiery",

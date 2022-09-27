@@ -2,22 +2,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "mmm",
-	"mhm",
-	" h "
+    " m",
+	"mh"
   ],
   "key": {
     "m": {
       "type": "forge:ore_dict",
-	  "ore": "ingotFiery"
+	  "ore": "ingotKnightmetal"
     },
     "h": {
-      "item": "minecraft:blaze_rod"
+      "item": "spartanweaponry:material",
+	  "data": 0
     }
   },
   "result": {
-    "nbt": "{ench:[{lvl:2s,id:20s}]}",
-    "item": "spartantwilight:battleaxe_fiery",
+    "item": "spartantwilight:parrying_dagger_knightly",
     "type": "minecraft:item_nbt"
   }
 }
