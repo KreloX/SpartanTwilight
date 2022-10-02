@@ -1,1 +1,21 @@
-{"textures": {"layer0": "spartantwilight:items/javelin_ironwood"}, "parent": "spartanweaponry:item/javelin_wood"}
+{
+  "parent": "spartanweaponry:item/base/javelin",
+  "textures": {
+    "layer0": "spartantwilight:items/javelin_ironwood"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "minecraft:throwing": 1.0,
+        "minecraft:empty": 0.0
+      },
+      "model": "spartantwilight:item/javelin_ironwood_throwing"
+    },
+    {
+      "predicate": {
+        "minecraft:empty": 1.0
+      },
+      "model": "spartanweaponry:item/base/javelin_empty"
+    }
+  ]
+}
