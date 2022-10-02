@@ -132,6 +132,21 @@
 		"item.spartantwilight.tomahawk_fiery": "§eFiery Tomahawk",
 		"item.spartantwilight.tomahawk_knightly": "Knightmetal Tomahawk",
 		"item.spartantwilight.tomahawk_steeleaf": "Steeleaf Tomahawk",
+		
+		// Parrying Daggers
+		"item.spartantwilight.parrying_dagger_ironwood": "Ironwood Parrying Dagger",
+		"item.spartantwilight.parrying_dagger_fiery": "§eFiery Parrying Dagger",
+		"item.spartantwilight.parrying_dagger_knightly": "Knightmetal Parrying Dagger",
+		"item.spartantwilight.parrying_dagger_steeleaf": "Steeleaf Parrying Dagger",
+		
+		// Scythes
+		"item.spartantwilight.scythe_ironwood": "Ironwood Scythe",
+		"item.spartantwilight.scythe_fiery": "§eFiery Scythe",
+		"item.spartantwilight.scythe_knightly": "Knightmetal Scythe",
+		"item.spartantwilight.scythe_steeleaf": "Steeleaf Scythe",
+		
+		// Misc
+		"item.spartantwilight.blaze_pole": "Blaze Pole",
 	
 	// Tooltips
 	
