@@ -132,8 +132,21 @@
 		"item.spartantwilight.tomahawk_fiery": "§e炽铁第安战斧",
 		"item.spartantwilight.tomahawk_knightly": "骑士第安战斧",
 		"item.spartantwilight.tomahawk_steeleaf": "钢叶第安战斧",
-
-
+		
+		// Parrying Daggers
+		"item.spartantwilight.parrying_dagger_ironwood": "铁树格挡匕首",
+		"item.spartantwilight.parrying_dagger_fiery": "§e炽铁格挡匕首",
+		"item.spartantwilight.parrying_dagger_knightly": "骑士格挡匕首",
+		"item.spartantwilight.parrying_dagger_steeleaf": "钢叶格挡匕首",
+		
+		// Scythes
+		"item.spartantwilight.scythe_ironwood": "铁树镰刀",
+		"item.spartantwilight.scythe_fiery": "§e炽铁镰刀",
+		"item.spartantwilight.scythe_knightly": "骑士镰刀",
+		"item.spartantwilight.scythe_steeleaf": "钢叶镰刀",
+		
+		// Misc
+		"item.spartantwilight.blaze_pole": "烈焰长手柄",
 
 	// Tooltips
 	
