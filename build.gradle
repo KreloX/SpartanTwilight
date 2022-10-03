@@ -11,7 +11,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.16.5-2.2.1'
+version = '1.16.5-2.3.0'
 group = 'krelox.spartantwilight' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'spartantwilight'
 
@@ -56,7 +56,7 @@ minecraft {
 
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'spartantwilight', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
                 spartantwilight {
@@ -82,7 +82,7 @@ dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.8'
     
     implementation fg.deobf("teamtwilight:twilightforest:4.0.870:universal")
-    implementation fg.deobf("curse.maven:spartanweaponry-278141:3724434")
+    implementation fg.deobf("curse.maven:spartanweaponry-278141:3725538")
 }
 
 jar {

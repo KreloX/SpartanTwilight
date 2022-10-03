@@ -22,6 +22,8 @@ public class ItemRegistryST
     public static WeaponMaterial STEELEAF = new WeaponMaterial("steeleaf", TwilightItemTier.TOOL_STEELEAF, ItemTagGenerator.STEELEAF_INGOTS.getName());
 	
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, SpartanTwilight.MODID);
+	
+	public static final RegistryObject<Item> BLAZE_POLE = ITEMS.register("blaze_pole", () -> new Item(new Item.Properties().tab(ItemGroupST.ITEM_GROUP_ST)));
 
 	public static final RegistryObject<Item> DAGGER_IRONWOOD = ITEMS.register("dagger_ironwood", () -> SpartanWeaponryAPI.createDagger(IRONWOOD, ItemGroupST.ITEM_GROUP_ST, true));
 	public static final RegistryObject<Item> DAGGER_FIERY = ITEMS.register("dagger_fiery", () -> SpartanWeaponryAPI.createDagger(FIERY, ItemGroupST.ITEM_GROUP_ST, true));
@@ -88,20 +90,20 @@ public class ItemRegistryST
 	public static final RegistryObject<Item> LONGBOW_STEELEAF = ITEMS.register("longbow_steeleaf", () -> SpartanWeaponryAPI.createLongbow(STEELEAF, ItemGroupST.ITEM_GROUP_ST, true));
 	public static final RegistryObject<Item> LONGBOW_KNIGHTLY = ITEMS.register("longbow_knightly", () -> SpartanWeaponryAPI.createLongbow(KNIGHTLY, ItemGroupST.ITEM_GROUP_ST, true));
 
-	public static final RegistryObject<Item> CROSSBOW_IRONWOOD = ITEMS.register("crossbow_ironwood", () -> SpartanWeaponryAPI.createHeavyCrossbow(IRONWOOD, ItemGroupST.ITEM_GROUP_ST, true));
-	public static final RegistryObject<Item> CROSSBOW_FIERY = ITEMS.register("crossbow_fiery", () -> SpartanWeaponryAPI.createHeavyCrossbow(FIERY, ItemGroupST.ITEM_GROUP_ST, true));
-	public static final RegistryObject<Item> CROSSBOW_STEELEAF = ITEMS.register("crossbow_steeleaf", () -> SpartanWeaponryAPI.createHeavyCrossbow(STEELEAF, ItemGroupST.ITEM_GROUP_ST, true));
-	public static final RegistryObject<Item> CROSSBOW_KNIGHTLY = ITEMS.register("crossbow_knightly", () -> SpartanWeaponryAPI.createHeavyCrossbow(KNIGHTLY, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> CROSSBOW_IRONWOOD = ITEMS.register("heavy_crossbow_ironwood", () -> SpartanWeaponryAPI.createHeavyCrossbow(IRONWOOD, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> CROSSBOW_FIERY = ITEMS.register("heavy_crossbow_fiery", () -> SpartanWeaponryAPI.createHeavyCrossbow(FIERY, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> CROSSBOW_STEELEAF = ITEMS.register("heavy_crossbow_steeleaf", () -> SpartanWeaponryAPI.createHeavyCrossbow(STEELEAF, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> CROSSBOW_KNIGHTLY = ITEMS.register("heavy_crossbow_knightly", () -> SpartanWeaponryAPI.createHeavyCrossbow(KNIGHTLY, ItemGroupST.ITEM_GROUP_ST, true));
 
 	public static final RegistryObject<Item> THROWING_KNIFE_IRONWOOD = ITEMS.register("throwing_knife_ironwood", () -> SpartanWeaponryAPI.createThrowingKnife(IRONWOOD, ItemGroupST.ITEM_GROUP_ST, true));
 	public static final RegistryObject<Item> THROWING_KNIFE_FIERY = ITEMS.register("throwing_knife_fiery", () -> SpartanWeaponryAPI.createThrowingKnife(FIERY, ItemGroupST.ITEM_GROUP_ST, true));
 	public static final RegistryObject<Item> THROWING_KNIFE_STEELEAF = ITEMS.register("throwing_knife_steeleaf", () -> SpartanWeaponryAPI.createThrowingKnife(STEELEAF, ItemGroupST.ITEM_GROUP_ST, true));
 	public static final RegistryObject<Item> THROWING_KNIFE_KNIGHTLY = ITEMS.register("throwing_knife_knightly", () -> SpartanWeaponryAPI.createThrowingKnife(KNIGHTLY, ItemGroupST.ITEM_GROUP_ST, true));
 
-	public static final RegistryObject<Item> TOMAHAWK_IRONWOOD = ITEMS.register("throwing_axe_ironwood", () -> SpartanWeaponryAPI.createTomahawk(IRONWOOD, ItemGroupST.ITEM_GROUP_ST, true));
-	public static final RegistryObject<Item> TOMAHAWK_FIERY = ITEMS.register("throwing_axe_fiery", () -> SpartanWeaponryAPI.createTomahawk(FIERY, ItemGroupST.ITEM_GROUP_ST, true));
-	public static final RegistryObject<Item> TOMAHAWK_STEELEAF = ITEMS.register("throwing_axe_steeleaf", () -> SpartanWeaponryAPI.createTomahawk(STEELEAF, ItemGroupST.ITEM_GROUP_ST, true));
-	public static final RegistryObject<Item> TOMAHAWK_KNIGHTLY = ITEMS.register("throwing_axe_knightly", () -> SpartanWeaponryAPI.createTomahawk(KNIGHTLY, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> TOMAHAWK_IRONWOOD = ITEMS.register("tomahawk_ironwood", () -> SpartanWeaponryAPI.createTomahawk(IRONWOOD, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> TOMAHAWK_FIERY = ITEMS.register("tomahawk_fiery", () -> SpartanWeaponryAPI.createTomahawk(FIERY, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> TOMAHAWK_STEELEAF = ITEMS.register("tomahawk_steeleaf", () -> SpartanWeaponryAPI.createTomahawk(STEELEAF, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> TOMAHAWK_KNIGHTLY = ITEMS.register("tomahawk_knightly", () -> SpartanWeaponryAPI.createTomahawk(KNIGHTLY, ItemGroupST.ITEM_GROUP_ST, true));
 
 	public static final RegistryObject<Item> JAVELIN_IRONWOOD = ITEMS.register("javelin_ironwood", () -> SpartanWeaponryAPI.createJavelin(IRONWOOD, ItemGroupST.ITEM_GROUP_ST, true));
 	public static final RegistryObject<Item> JAVELIN_FIERY = ITEMS.register("javelin_fiery", () -> SpartanWeaponryAPI.createJavelin(FIERY, ItemGroupST.ITEM_GROUP_ST, true));
@@ -118,10 +120,10 @@ public class ItemRegistryST
 	public static final RegistryObject<Item> BATTLEAXE_STEELEAF = ITEMS.register("battleaxe_steeleaf", () -> SpartanWeaponryAPI.createBattleaxe(STEELEAF, ItemGroupST.ITEM_GROUP_ST, true));
 	public static final RegistryObject<Item> BATTLEAXE_KNIGHTLY = ITEMS.register("battleaxe_knightly", () -> SpartanWeaponryAPI.createBattleaxe(KNIGHTLY, ItemGroupST.ITEM_GROUP_ST, true));
 
-	public static final RegistryObject<Item> MACE_IRONWOOD = ITEMS.register("mace_ironwood", () -> SpartanWeaponryAPI.createFlangedMace(IRONWOOD, ItemGroupST.ITEM_GROUP_ST, true));
-	public static final RegistryObject<Item> MACE_FIERY = ITEMS.register("mace_fiery", () -> SpartanWeaponryAPI.createFlangedMace(FIERY, ItemGroupST.ITEM_GROUP_ST, true));
-	public static final RegistryObject<Item> MACE_STEELEAF = ITEMS.register("mace_steeleaf", () -> SpartanWeaponryAPI.createFlangedMace(STEELEAF, ItemGroupST.ITEM_GROUP_ST, true));
-	public static final RegistryObject<Item> MACE_KNIGHTLY = ITEMS.register("mace_knightly", () -> SpartanWeaponryAPI.createFlangedMace(KNIGHTLY, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> MACE_IRONWOOD = ITEMS.register("flanged_mace_ironwood", () -> SpartanWeaponryAPI.createFlangedMace(IRONWOOD, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> MACE_FIERY = ITEMS.register("flanged_mace_fiery", () -> SpartanWeaponryAPI.createFlangedMace(FIERY, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> MACE_STEELEAF = ITEMS.register("flanged_mace_steeleaf", () -> SpartanWeaponryAPI.createFlangedMace(STEELEAF, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> MACE_KNIGHTLY = ITEMS.register("flanged_mace_knightly", () -> SpartanWeaponryAPI.createFlangedMace(KNIGHTLY, ItemGroupST.ITEM_GROUP_ST, true));
 
 	public static final RegistryObject<Item> GLAIVE_IRONWOOD = ITEMS.register("glaive_ironwood", () -> SpartanWeaponryAPI.createGlaive(IRONWOOD, ItemGroupST.ITEM_GROUP_ST, true));
 	public static final RegistryObject<Item> GLAIVE_FIERY = ITEMS.register("glaive_fiery", () -> SpartanWeaponryAPI.createGlaive(FIERY, ItemGroupST.ITEM_GROUP_ST, true));
@@ -132,4 +134,14 @@ public class ItemRegistryST
 	public static final RegistryObject<Item> QUARTERSTAFF_FIERY = ITEMS.register("quarterstaff_fiery", () -> SpartanWeaponryAPI.createQuarterstaff(FIERY, ItemGroupST.ITEM_GROUP_ST, true));
 	public static final RegistryObject<Item> QUARTERSTAFF_STEELEAF = ITEMS.register("quarterstaff_steeleaf", () -> SpartanWeaponryAPI.createQuarterstaff(STEELEAF, ItemGroupST.ITEM_GROUP_ST, true));
 	public static final RegistryObject<Item> QUARTERSTAFF_KNIGHTLY = ITEMS.register("quarterstaff_knightly", () -> SpartanWeaponryAPI.createQuarterstaff(KNIGHTLY, ItemGroupST.ITEM_GROUP_ST, true));
+
+	public static final RegistryObject<Item> SCYTHE_IRONWOOD = ITEMS.register("scythe_ironwood", () -> SpartanWeaponryAPI.createScythe(IRONWOOD, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> SCYTHE_FIERY = ITEMS.register("scythe_fiery", () -> SpartanWeaponryAPI.createScythe(FIERY, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> SCYTHE_STEELEAF = ITEMS.register("scythe_steeleaf", () -> SpartanWeaponryAPI.createScythe(STEELEAF, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> SCYTHE_KNIGHTLY = ITEMS.register("scythe_knightly", () -> SpartanWeaponryAPI.createScythe(KNIGHTLY, ItemGroupST.ITEM_GROUP_ST, true));
+
+	public static final RegistryObject<Item> PARRYING_DAGGER_IRONWOOD = ITEMS.register("parrying_dagger_ironwood", () -> SpartanWeaponryAPI.createParryingDagger(IRONWOOD, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> PARRYING_DAGGER_FIERY = ITEMS.register("parrying_dagger_fiery", () -> SpartanWeaponryAPI.createParryingDagger(FIERY, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> PARRYING_DAGGER_STEELEAF = ITEMS.register("parrying_dagger_steeleaf", () -> SpartanWeaponryAPI.createParryingDagger(STEELEAF, ItemGroupST.ITEM_GROUP_ST, true));
+	public static final RegistryObject<Item> PARRYING_DAGGER_KNIGHTLY = ITEMS.register("parrying_dagger_knightly", () -> SpartanWeaponryAPI.createParryingDagger(KNIGHTLY, ItemGroupST.ITEM_GROUP_ST, true));
 }
