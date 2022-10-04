@@ -19,7 +19,7 @@
 	}
   },
   "result": {
-    "nbt": "{Enchantments:[{lvl:1s,id:\"minecraft:knockback\"},{lvl:1s,id:\"minecraft:fortune\"}]}",
+    "nbt": "{Enchantments:[{lvl:1s,id:\"minecraft:knockback\"},{lvl:1s,id:\"minecraft:efficiency\"}]}",
     "item": "spartantwilight:battleaxe_ironwood",
     "type": "minecraft:item_nbt"
   },

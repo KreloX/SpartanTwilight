@@ -24,7 +24,9 @@
     }
   },
   "result": {
-    "item": "spartantwilight:heavy_crossbow_steeleaf"
+    "nbt": "{Enchantments:[{lvl:2s,id:\"minecraft:quick_charge\"}]}",
+    "item": "spartantwilight:heavy_crossbow_steeleaf",
+    "type": "minecraft:item_nbt"
   },
   "conditions": [
     {
