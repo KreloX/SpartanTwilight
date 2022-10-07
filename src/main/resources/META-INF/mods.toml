@@ -4,11 +4,11 @@ issueTrackerURL="https://github.com/KreloX/SpartanTwilight/issues"
 license="MIT License"
 [[mods]] #mandatory
 modId="spartantwilight"
-version="1.16.5-2.3.0"
+version="1.16.5-2.3.2"
 displayName="Spartan Weaponry: Twilight Forest"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-twilight-forest"
 logoFile="logo.png"
-credits="Thanks to dering999 for Chinese translation."
+credits="Thanks to dering999 for Chinese translation. Thanks to alebentod for Russian translation."
 authors="KreloX"
 description='''
 
@@ -27,13 +27,13 @@ Spicing up Spartan Weaponry by implementing materials from the magical world of 
     versionRange="[1.16.5,1.17)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.spartansimpleores]]
+[[dependencies.spartantwilight]]
     modId="twilightforest"
     mandatory=true
     versionRange="[1.16.5-4.0.870,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.spartansimpleores]]
+[[dependencies.spartantwilight]]
     modId="spartanweaponry"
     mandatory=true
     versionRange="[2.2.0,)"
