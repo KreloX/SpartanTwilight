@@ -14,7 +14,7 @@
     }
   },
   "result": {
-    "nbt": "{Enchantments:[{lvl:2s,id:\"spartanweaponry:throwing_luck\"}]}",
+    "nbt": "{Enchantments:[{lvl:2s,id:\"spartanweaponry:lucky_throw\"}]}",
     "item": "spartantwilight:javelin_steeleaf",
     "type": "minecraft:item_nbt"
   },

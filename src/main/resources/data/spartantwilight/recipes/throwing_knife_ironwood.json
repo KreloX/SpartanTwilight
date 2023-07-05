@@ -14,7 +14,7 @@
     }
   },
   "result": {
-    "nbt": "{Enchantments:[{lvl:1s,id:\"spartanweaponry:throwing_range\"}]}",
+    "nbt": "{Enchantments:[{lvl:1s,id:\"spartanweaponry:propel\"}]}",
     "item": "spartantwilight:throwing_knife_ironwood",
     "type": "minecraft:item_nbt"
   },
