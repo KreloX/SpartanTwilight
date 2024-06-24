@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:halberd",
+  "pattern": [
+    " #",
+    "##",
+    "#/"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/knightmetal"
+    },
+    "/": {
+      "item": "spartanweaponry:pole"
+    }
+  },
+  "result": {
+    "item": "spartantwilight:knightmetal_halberd"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "halberd"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

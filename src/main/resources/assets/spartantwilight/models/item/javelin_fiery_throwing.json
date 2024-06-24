@@ -1,6 +1,0 @@
-{
-  "parent": "spartanweaponry:item/base/javelin_throwing",
-  "textures": {
-    "layer0": "spartantwilight:items/javelin_fiery"
-  }
-}

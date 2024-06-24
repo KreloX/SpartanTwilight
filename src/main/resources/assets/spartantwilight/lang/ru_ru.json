@@ -2,148 +2,148 @@
 	// Weapons
 	
 		// Daggers
-		"item.spartantwilight.dagger_ironwood": "Кинжал из железного дерева",
-		"item.spartantwilight.dagger_fiery": "Огненный кинжал",
-		"item.spartantwilight.dagger_knightly": "Рыцарский Кинжал",
-		"item.spartantwilight.dagger_steeleaf": "Кинжал из стальных листьев",
+		"item.spartantwilight.ironwood_dagger": "Кинжал из железного дерева",
+		"item.spartantwilight.fiery_dagger": "Огненный кинжал",
+		"item.spartantwilight.knightmetal_dagger": "Рыцарский Кинжал",
+		"item.spartantwilight.steeleaf_dagger": "Кинжал из стальных листьев",
 		
 		// Longsword
-		"item.spartantwilight.longsword_ironwood": "Полутораручный меч из железного дерева",
-		"item.spartantwilight.longsword_fiery": "Огненный полутораручный меч",
-		"item.spartantwilight.longsword_knightly": "Рыцарский полутораручный меч",
-		"item.spartantwilight.longsword_steeleaf": "Полутораручный мечиз стальных листьев",
+		"item.spartantwilight.ironwood_longsword": "Полутораручный меч из железного дерева",
+		"item.spartantwilight.fiery_longsword": "Огненный полутораручный меч",
+		"item.spartantwilight.knightmetal_longsword": "Рыцарский полутораручный меч",
+		"item.spartantwilight.steeleaf_longsword": "Полутораручный мечиз стальных листьев",
 		
 		// Battle axes
-		"item.spartantwilight.battleaxe_ironwood": "Боевой топориз железного дерева",
-		"item.spartantwilight.battleaxe_fiery": "Огненный боевой топор",
-		"item.spartantwilight.battleaxe_knightly": "Рыцарский боевой топор",
-		"item.spartantwilight.battleaxe_steeleaf": "Боевой топор из стальных листьев",
+		"item.spartantwilight.ironwood_battleaxe": "Боевой топориз железного дерева",
+		"item.spartantwilight.fiery_battleaxe": "Огненный боевой топор",
+		"item.spartantwilight.knightmetal_battleaxe": "Рыцарский боевой топор",
+		"item.spartantwilight.steeleaf_battleaxe": "Боевой топор из стальных листьев",
 		
 		// Flanged Maces
-		"item.spartantwilight.flanged_mace_ironwood": "Пернач из железного дерева",
-		"item.spartantwilight.flanged_mace_fiery": "Огненный пернач",
-		"item.spartantwilight.flanged_mace_knightly": "Рыцарский пернач",
-		"item.spartantwilight.flanged_mace_steeleaf": "Пернач из стальных листьев",
+		"item.spartantwilight.ironwood_flanged_mace": "Пернач из железного дерева",
+		"item.spartantwilight.fiery_flanged_mace": "Огненный пернач",
+		"item.spartantwilight.knightmetal_flanged_mace": "Рыцарский пернач",
+		"item.spartantwilight.steeleaf_flanged_mace": "Пернач из стальных листьев",
 		
 		// Glaives
-		"item.spartantwilight.glaive_ironwood": "Глефа из железного дерева",
-		"item.spartantwilight.glaive_fiery": "Огненная глефа",
-		"item.spartantwilight.glaive_knightly": "Рыцарская глефа",
-		"item.spartantwilight.glaive_steeleaf": "Глефа из стальных листьев",
+		"item.spartantwilight.ironwood_glaive": "Глефа из железного дерева",
+		"item.spartantwilight.fiery_glaive": "Огненная глефа",
+		"item.spartantwilight.knightmetal_glaive": "Рыцарская глефа",
+		"item.spartantwilight.steeleaf_glaive": "Глефа из стальных листьев",
 		
 		// Halberds
-		"item.spartantwilight.halberd_ironwood": "Алебарда из железного дерева",
-		"item.spartantwilight.halberd_fiery": "Огненная алебарда",
-		"item.spartantwilight.halberd_knightly": "Рыцарская алебарда",
-		"item.spartantwilight.halberd_steeleaf": "Алебарда из стальных листьев",
+		"item.spartantwilight.ironwood_halberd": "Алебарда из железного дерева",
+		"item.spartantwilight.fiery_halberd": "Огненная алебарда",
+		"item.spartantwilight.knightmetal_halberd": "Рыцарская алебарда",
+		"item.spartantwilight.steeleaf_halberd": "Алебарда из стальных листьев",
 		
 		// Battle Hammers
-		"item.spartantwilight.hammer_ironwood": "Боевой молот из железного дерева",
-		"item.spartantwilight.hammer_fiery": "Огненный боевой молот",
-		"item.spartantwilight.hammer_knightly": "Рыцарский боевой молот",
-		"item.spartantwilight.hammer_steeleaf": "Боевой молот из стальных листьев",
+		"item.spartantwilight.ironwood_battle_hammer": "Боевой молот из железного дерева",
+		"item.spartantwilight.fiery_battle_hammer": "Огненный боевой молот",
+		"item.spartantwilight.knightmetal_battle_hammer": "Рыцарский боевой молот",
+		"item.spartantwilight.steeleaf_battle_hammer": "Боевой молот из стальных листьев",
 		
 		// Longbows
-		"item.spartantwilight.longbow_ironwood": "Усиленный железным деревом длинный лук",
-		"item.spartantwilight.longbow_fiery": "Усиленный огненным слитком длинный лук",
-		"item.spartantwilight.longbow_knightly": "Усиленный рыцарским металлом длинный лук",
-		"item.spartantwilight.longbow_steeleaf": "Усиленный стальными листьями длинный лук",
+		"item.spartantwilight.ironwood_longbow": "Усиленный железным деревом длинный лук",
+		"item.spartantwilight.fiery_longbow": "Усиленный огненным слитком длинный лук",
+		"item.spartantwilight.knightmetal_longbow": "Усиленный рыцарским металлом длинный лук",
+		"item.spartantwilight.steeleaf_longbow": "Усиленный стальными листьями длинный лук",
 		
 		// Lances
-		"item.spartantwilight.lance_ironwood": "Лэнс из железного дерева",
-		"item.spartantwilight.lance_fiery": "Огненный лэнс",
-		"item.spartantwilight.lance_knightly": "Рыцарский лэнс",
-		"item.spartantwilight.lance_steeleaf": "Лэнс из стальных листьев",
+		"item.spartantwilight.ironwood_lance": "Лэнс из железного дерева",
+		"item.spartantwilight.fiery_lance": "Огненный лэнс",
+		"item.spartantwilight.knightmetal_lance": "Рыцарский лэнс",
+		"item.spartantwilight.steeleaf_lance": "Лэнс из стальных листьев",
 		
 		// Pikes
-		"item.spartantwilight.pike_ironwood": "Пика из железного дерева",
-		"item.spartantwilight.pike_fiery": "Огненная пика",
-		"item.spartantwilight.pike_knightly": "Рыцарская пика",
-		"item.spartantwilight.pike_steeleaf": "Пика из стальных листьев",
+		"item.spartantwilight.ironwood_pike": "Пика из железного дерева",
+		"item.spartantwilight.fiery_pike": "Огненная пика",
+		"item.spartantwilight.knightmetal_pike": "Рыцарская пика",
+		"item.spartantwilight.steeleaf_pike": "Пика из стальных листьев",
 		
 		// Quarterstaffs
-		"item.spartantwilight.quarterstaff_ironwood": "Боевой посох из железного дерева",
-		"item.spartantwilight.quarterstaff_fiery": "Огненный боевой посох",
-		"item.spartantwilight.quarterstaff_knightly": "Рыцарский боевой посох",
-		"item.spartantwilight.quarterstaff_steeleaf": "Боевой посох из стальных листьев",
+		"item.spartantwilight.ironwood_quarterstaff": "Боевой посох из железного дерева",
+		"item.spartantwilight.fiery_quarterstaff": "Огненный боевой посох",
+		"item.spartantwilight.knightmetal_quarterstaff": "Рыцарский боевой посох",
+		"item.spartantwilight.steeleaf_quarterstaff": "Боевой посох из стальных листьев",
 		
 		// Rapiers
-		"item.spartantwilight.rapier_ironwood": "Рапира из железного дерева",
-		"item.spartantwilight.rapier_fiery": "Огненная рапира",
-		"item.spartantwilight.rapier_knightly": "Рыцарская рапира",
-		"item.spartantwilight.rapier_steeleaf": "Рапира из стальных листьев",
+		"item.spartantwilight.ironwood_rapier": "Рапира из железного дерева",
+		"item.spartantwilight.fiery_rapier": "Огненная рапира",
+		"item.spartantwilight.knightmetal_rapier": "Рыцарская рапира",
+		"item.spartantwilight.steeleaf_rapier": "Рапира из стальных листьев",
 		
 		// Sabers
-		"item.spartantwilight.saber_ironwood": "Сабля из железного дерева",
-		"item.spartantwilight.saber_fiery": "Огненныая сабля",
-		"item.spartantwilight.saber_knightly": "Рыцарская сабля",
-		"item.spartantwilight.saber_steeleaf": "Сабля из стальных листьев",
+		"item.spartantwilight.ironwood_saber": "Сабля из железного дерева",
+		"item.spartantwilight.fiery_saber": "Огненныая сабля",
+		"item.spartantwilight.knightmetal_saber": "Рыцарская сабля",
+		"item.spartantwilight.steeleaf_saber": "Сабля из стальных листьев",
 		
 		// Spears
-		"item.spartantwilight.spear_ironwood": "Копьё из железного дерева",
-		"item.spartantwilight.spear_fiery": "Огненное копьё",
-		"item.spartantwilight.spear_knightly": "Рыцарское копьё",
-		"item.spartantwilight.spear_steeleaf": "Копьё из стальных листьев",
+		"item.spartantwilight.ironwood_spear": "Копьё из железного дерева",
+		"item.spartantwilight.fiery_spear": "Огненное копьё",
+		"item.spartantwilight.knightmetal_spear": "Рыцарское копьё",
+		"item.spartantwilight.steeleaf_spear": "Копьё из стальных листьев",
 		
 		// Warhammers
-		"item.spartantwilight.warhammer_ironwood": "Клевец из железного дерева",
-		"item.spartantwilight.warhammer_fiery": "Огненный клевец",
-		"item.spartantwilight.warhammer_knightly": "Рыцарский клевец",
-		"item.spartantwilight.warhammer_steeleaf": "Клевец из стальных листьев",
+		"item.spartantwilight.ironwood_warhammer": "Клевец из железного дерева",
+		"item.spartantwilight.fiery_warhammer": "Огненный клевец",
+		"item.spartantwilight.knightmetal_warhammer": "Рыцарский клевец",
+		"item.spartantwilight.steeleaf_warhammer": "Клевец из стальных листьев",
 		
 		// Katanas
-		"item.spartantwilight.katana_ironwood": "Катана из железного дерева",
-		"item.spartantwilight.katana_fiery": "Огненная катана",
-		"item.spartantwilight.katana_knightly": "Рыцарская катана",
-		"item.spartantwilight.katana_steeleaf": "Катана из стальных листьев",
+		"item.spartantwilight.ironwood_katana": "Катана из железного дерева",
+		"item.spartantwilight.fiery_katana": "Огненная катана",
+		"item.spartantwilight.knightmetal_katana": "Рыцарская катана",
+		"item.spartantwilight.steeleaf_katana": "Катана из стальных листьев",
 		
 		// Greatswords
-		"item.spartantwilight.greatsword_ironwood": "Двуручный меч из железного дерева",
-		"item.spartantwilight.greatsword_fiery": "Огненный двуручный меч",
-		"item.spartantwilight.greatsword_knightly": "Рыцарский двуручный меч",
-		"item.spartantwilight.greatsword_steeleaf": "Двуручный меч из стальных листьев",
+		"item.spartantwilight.ironwood_greatsword": "Двуручный меч из железного дерева",
+		"item.spartantwilight.fiery_greatsword": "Огненный двуручный меч",
+		"item.spartantwilight.knightmetal_greatsword": "Рыцарский двуручный меч",
+		"item.spartantwilight.steeleaf_greatsword": "Двуручный меч из стальных листьев",
 		
 		// Boomerangs
-		"item.spartantwilight.boomerang_ironwood": "Бумеранг из железного дерева",
-		"item.spartantwilight.boomerang_fiery": "Огненный бумеранг",
-		"item.spartantwilight.boomerang_knightly": "Рыцарский бумеранг",
-		"item.spartantwilight.boomerang_steeleaf": "Бумеранг из стальных листьев",
+		"item.spartantwilight.ironwood_boomerang": "Бумеранг из железного дерева",
+		"item.spartantwilight.fiery_boomerang": "Огненный бумеранг",
+		"item.spartantwilight.knightmetal_boomerang": "Рыцарский бумеранг",
+		"item.spartantwilight.steeleaf_boomerang": "Бумеранг из стальных листьев",
 		
 		// Crossbows
-		"item.spartantwilight.heavy_crossbow_ironwood": "Усиленный железным деревом тяжёлый  арбалет",
-		"item.spartantwilight.heavy_crossbow_fiery": "Усиленный огненным слитком тяжёлый  арбалет",
-		"item.spartantwilight.heavy_crossbow_knightly": "Усиленный рыцарским металлом тяжёлый  арбалет",
-		"item.spartantwilight.heavy_crossbow_steeleaf": "Усиленный стальными листьями тяжёлый  арбалет",
+		"item.spartantwilight.ironwood_heavy_crossbow": "Усиленный железным деревом тяжёлый  арбалет",
+		"item.spartantwilight.fiery_heavy_crossbow": "Усиленный огненным слитком тяжёлый  арбалет",
+		"item.spartantwilight.knightmetal_heavy_crossbow": "Усиленный рыцарским металлом тяжёлый  арбалет",
+		"item.spartantwilight.steeleaf_heavy_crossbow": "Усиленный стальными листьями тяжёлый  арбалет",
 		
 		// Javelins
-		"item.spartantwilight.javelin_ironwood": "Дротик из железного дерева",
-		"item.spartantwilight.javelin_fiery": "Огненный дротик",
-		"item.spartantwilight.javelin_knightly": "Рыцарский дротик",
-		"item.spartantwilight.javelin_steeleaf": "Дротик из стальных листьев",
+		"item.spartantwilight.ironwood_javelin": "Дротик из железного дерева",
+		"item.spartantwilight.fiery_javelin": "Огненный дротик",
+		"item.spartantwilight.javelin": "Рыцарский дротик",
+		"item.spartantwilight.steeleaf_javelin": "Дротик из стальных листьев",
 		
 		// Throwing Knives
-		"item.spartantwilight.throwing_knife_ironwood": "Метательный нож из железного дерева",
-		"item.spartantwilight.throwing_knife_fiery": "Огненный метательный нож",
-		"item.spartantwilight.throwing_knife_knightly": "Рыцарский метательный нож",
-		"item.spartantwilight.throwing_knife_steeleaf": "Метательный нож из стальных листьев",
+		"item.spartantwilight.ironwood_throwing_knife": "Метательный нож из железного дерева",
+		"item.spartantwilight.fiery_throwing_knife": "Огненный метательный нож",
+		"item.spartantwilight.knightmetal_throwing_knife": "Рыцарский метательный нож",
+		"item.spartantwilight.steeleaf_throwing_knife": "Метательный нож из стальных листьев",
 		
 		// Tomahawks
-		"item.spartantwilight.tomahawk_ironwood": "Томагавк из железного дерева",
-		"item.spartantwilight.tomahawk_fiery": "Огненный томагавк",
-		"item.spartantwilight.tomahawk_knightly": "Рыцарский томагавк",
-		"item.spartantwilight.tomahawk_steeleaf": "Томагавк из стальных листьев",
+		"item.spartantwilight.ironwood_tomahawk": "Томагавк из железного дерева",
+		"item.spartantwilight.fiery_tomahawk": "Огненный томагавк",
+		"item.spartantwilight.knightmetal_tomahawk": "Рыцарский томагавк",
+		"item.spartantwilight.steeleaf_tomahawk": "Томагавк из стальных листьев",
 		
-		// Parrying Кинжалs
-		"item.spartantwilight.parrying_dagger_ironwood": "Дага из железного дерева",
-		"item.spartantwilight.parrying_dagger_fiery": "Огненный дага",
-		"item.spartantwilight.parrying_dagger_knightly": "Рыцарский дага",
-		"item.spartantwilight.parrying_dagger_steeleaf": "Дага из стальных листьев",
+		// Parrying Daggers
+		"item.spartantwilight.ironwood_parrying_dagger": "Дага из железного дерева",
+		"item.spartantwilight.fiery_parrying_dagger": "Огненный дага",
+		"item.spartantwilight.knightmetal_parrying_dagger": "Рыцарский дага",
+		"item.spartantwilight.steeleaf_parrying_dagger": "Дага из стальных листьев",
 		
 		// Scythes
-		"item.spartantwilight.scythe_ironwood": "Коса из железного дерева",
-		"item.spartantwilight.scythe_fiery": "Огненная коса",
-		"item.spartantwilight.scythe_knightly": "Рыцарская коса",
-		"item.spartantwilight.scythe_steeleaf": "Коса из стальных листьев",
+		"item.spartantwilight.ironwood_scythe": "Коса из железного дерева",
+		"item.spartantwilight.fiery_scythe": "Огненная коса",
+		"item.spartantwilight.knightmetal_scythe": "Рыцарская коса",
+		"item.spartantwilight.steeleaf_scythe": "Коса из стальных листьев",
 		
 		// Misc
 		"item.spartantwilight.blaze_pole": "Огненный шест",
@@ -151,15 +151,15 @@
 	// Tooltips
 	
 		// Fiery
-		"tooltip.spartantwilight.trait.fiery"= "Пылающий",
+		"tooltip.spartantwilight.trait.fiery": "Пылающий",
 		"tooltip.spartantwilight.trait.fiery.desc": "Поджигает цели при попадании",
 		
 		// Knightly
-		"tooltip.spartantwilight.trait.knightly"= "Боевые навыки",
-		"tooltip.spartantwilight.trait.knightly.desc": "Наносит дополнительный урон бронированным целям",
+		"tooltip.spartantwilight.trait.knightmetal": "Боевые навыки",
+		"tooltip.spartantwilight.trait.knightmetal.desc": "Наносит дополнительный урон бронированным целям",
 		
 	// Tabs
 		
 		// SWTF
-		"itemGroup.sw_twilight_forest": "Spartan Weaponry: Twilight Forest"
+		"itemGroup.spartantwilight": "Spartan Weaponry: Twilight Forest"
 }

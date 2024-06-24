@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:boomerang",
+  "pattern": [
+    "#PP",
+    "P  ",
+    "P  "
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/ironwood"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "spartantwilight:ironwood_boomerang"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "boomerang"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

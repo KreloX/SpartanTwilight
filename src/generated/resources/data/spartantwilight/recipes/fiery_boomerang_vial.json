@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spartanweaponry:iron_boomerang"
+    },
+    {
+      "tag": "twilightforest:fiery_vial"
+    }
+  ],
+  "result": {
+    "item": "spartantwilight:fiery_boomerang"
+  }
+}

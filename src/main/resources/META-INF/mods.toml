@@ -1,41 +1,37 @@
 modLoader="javafml"
-loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
-issueTrackerURL="https://github.com/KreloX/SpartanTwilight/issues"
-license="MIT License"
-[[mods]] #mandatory
-modId="spartantwilight"
-version="1.16.5-2.3.2"
-displayName="Spartan Weaponry: Twilight Forest"
-displayURL="https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-twilight-forest"
+loaderVersion="${loader_version_range}"
+issueTrackerURL="${mod_issue_tracker}"
+license="${mod_license}"
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+displayURL="${mod_homepage}"
 logoFile="logo.png"
-credits="Thanks to dering999 for Chinese translation. Thanks to alebentod for Russian translation."
-authors="KreloX"
-description='''
-
-Spicing up Spartan Weaponry by implementing materials from the magical world of Twilight Forest.
-
-'''
-[[dependencies.spartantwilight]]
+credits="${mod_credits}"
+authors="${mod_authors}"
+description='''${mod_description}'''
+[[dependencies.${mod_id}]]
     modId="forge"
     mandatory=true
-    versionRange="[36,)"
+    versionRange="${forge_version_range}"
     ordering="NONE"
     side="BOTH"
-[[dependencies.spartantwilight]]
+[[dependencies.${mod_id}]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.5,1.17)"
+    versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
-[[dependencies.spartantwilight]]
+[[dependencies.${mod_id}]]
     modId="twilightforest"
     mandatory=true
-    versionRange="[1.16.5-4.0.870,)"
+    versionRange="[${twilight_forest_version},)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.spartantwilight]]
+[[dependencies.${mod_id}]]
     modId="spartanweaponry"
     mandatory=true
-    versionRange="[2.2.0,)"
+    versionRange="${spartan_weaponry_version_range}"
     ordering="NONE"
     side="BOTH"

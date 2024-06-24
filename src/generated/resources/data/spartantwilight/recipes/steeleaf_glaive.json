@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:glaive",
+  "pattern": [
+    " #",
+    " #",
+    " /"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/steeleaf"
+    },
+    "/": {
+      "item": "spartanweaponry:pole"
+    }
+  },
+  "result": {
+    "item": "spartantwilight:steeleaf_glaive"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "glaive"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

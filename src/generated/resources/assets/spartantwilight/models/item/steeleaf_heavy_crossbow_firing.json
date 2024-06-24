@@ -1,0 +1,6 @@
+{
+  "parent": "spartanweaponry:item/base/heavy_crossbow_firing",
+  "textures": {
+    "layer0": "spartantwilight:item/steeleaf_heavy_crossbow_loaded"
+  }
+}

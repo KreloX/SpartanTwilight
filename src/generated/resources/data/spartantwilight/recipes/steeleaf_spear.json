@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:spear",
+  "pattern": [
+    "#",
+    "/"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/steeleaf"
+    },
+    "/": {
+      "item": "spartanweaponry:pole"
+    }
+  },
+  "result": {
+    "item": "spartantwilight:steeleaf_spear"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "spear"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

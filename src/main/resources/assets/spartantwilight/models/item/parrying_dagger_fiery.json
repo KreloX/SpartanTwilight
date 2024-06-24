@@ -1,9 +1,0 @@
-{"textures": {"layer0": "spartantwilight:items/parrying_dagger_fiery"}, "parent": "spartanweaponry:item/parrying_dagger_wood", 
-"overrides": [
-    {
-      "predicate": {
-        "minecraft:blocking": 1.0
-      },
-      "model": "spartantwilight:item/parrying_dagger_fiery_blocking"
-    }
-  ]}

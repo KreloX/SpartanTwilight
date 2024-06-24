@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:scythe",
+  "pattern": [
+    "## ",
+    "  #",
+    " / "
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/ironwood"
+    },
+    "/": {
+      "item": "spartanweaponry:pole"
+    }
+  },
+  "result": {
+    "item": "spartantwilight:ironwood_scythe"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "scythe"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

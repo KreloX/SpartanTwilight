@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:battleaxe",
+  "pattern": [
+    "###",
+    "#/#",
+    " | "
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/steeleaf"
+    },
+    "|": {
+      "item": "spartanweaponry:handle"
+    },
+    "/": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "spartantwilight:steeleaf_battleaxe"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "battleaxe"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}

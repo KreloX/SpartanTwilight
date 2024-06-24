@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "spartanweaponry:quarterstaff",
+  "pattern": [
+    "  #",
+    " / ",
+    "#  "
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/fiery"
+    },
+    "/": {
+      "item": "spartantwilight:blaze_pole"
+    }
+  },
+  "result": {
+    "item": "spartantwilight:fiery_quarterstaff"
+  },
+  "conditions": [
+    {
+      "disabled": [
+        "quarterstaff"
+      ],
+      "type": "spartanweaponry:type_disabled"
+    }
+  ]
+}
