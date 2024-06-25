@@ -139,11 +139,6 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
-    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.3.6"))
-    implementation(jarJar("io.github.llamalad7:mixinextras-forge:0.3.6")) {
-        jarJar.ranged(it, "[0.3.6,)")
-    }
-
     implementation fg.deobf("teamtwilight:twilightforest:${twilight_forest_version}:universal")
     implementation fg.deobf("curse.maven:spartanweaponry-278141:5011992")
 }
