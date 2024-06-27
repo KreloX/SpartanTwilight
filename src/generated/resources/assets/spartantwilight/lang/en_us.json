@@ -97,8 +97,8 @@
   "item.spartantwilight.steeleaf_tomahawk": "Steeleaf Tomahawk",
   "item.spartantwilight.steeleaf_warhammer": "Steeleaf Warhammer",
   "itemGroup.spartantwilight": "Spartan Weaponry: Twilight Forest",
-  "tooltip.spartantwilight.trait.fiery": "Blazing",
-  "tooltip.spartantwilight.trait.fiery.desc": "Burns targets on hit",
-  "tooltip.spartantwilight.trait.knightmetal": "Combat Skilled",
-  "tooltip.spartantwilight.trait.knightmetal.desc": "Deals extra damage to armored targets"
+  "tooltip.spartantwilight.trait.blazing": "Blazing",
+  "tooltip.spartantwilight.trait.blazing.desc": "Burns targets on hit",
+  "tooltip.spartantwilight.trait.combat_skilled": "Combat Skilled",
+  "tooltip.spartantwilight.trait.combat_skilled.desc": "Deals extra damage to armored targets"
 }

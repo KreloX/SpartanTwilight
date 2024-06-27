@@ -35,3 +35,9 @@ description='''${mod_description}'''
     versionRange="${spartan_weaponry_version_range}"
     ordering="NONE"
     side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="spartantoolkit"
+    mandatory=true
+    versionRange="[${toolkit_version},)"
+    ordering="NONE"
+    side="BOTH"

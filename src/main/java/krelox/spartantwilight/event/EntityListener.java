@@ -1,9 +1,8 @@
 package krelox.spartantwilight.event;
 
 import com.oblivioussp.spartanweaponry.entity.projectile.ThrowingWeaponEntity;
+import krelox.spartantoolkit.WeaponItem;
 import krelox.spartantwilight.SpartanTwilight;
-import krelox.spartantwilight.item.STItems.Material;
-import krelox.spartantwilight.item.WeaponItem;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.protocol.game.ClientboundAnimatePacket;
 import net.minecraft.server.level.ServerLevel;
@@ -24,7 +23,7 @@ public class EntityListener {
         if (!(event.getSource().getEntity() instanceof LivingEntity attacker)) return;
         if (!(attacker.getMainHandItem().getItem() instanceof WeaponItem weapon)) return;
 
-        if (weapon.getMaterial().equals(Material.FIERY.material)) {
+        if (weapon.getMaterial().equals(SpartanTwilight.FIERY.material)) {
             if (!target.fireImmune()) {
                 target.setSecondsOnFire(15);
             } else {
@@ -52,7 +51,7 @@ public class EntityListener {
             weapon = weaponItem;
         } else return;
 
-        if (weapon.getMaterial().equals(Material.KNIGHTMETAL.material) && target.getArmorValue() > 0) {
+        if (weapon.getMaterial().equals(SpartanTwilight.KNIGHTMETAL.material) && target.getArmorValue() > 0) {
             if (target.getArmorCoverPercentage() > 0) {
                 int moreBonus = (int) (KNIGHTMETAL_BONUS_DAMAGE * target.getArmorCoverPercentage());
                 event.setAmount(event.getAmount() + moreBonus);

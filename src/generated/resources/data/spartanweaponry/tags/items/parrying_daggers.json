@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "spartantwilight:knightmetal_parrying_dagger",
-    "spartantwilight:steeleaf_parrying_dagger",
+    "spartantwilight:ironwood_parrying_dagger",
     "spartantwilight:fiery_parrying_dagger",
-    "spartantwilight:ironwood_parrying_dagger"
+    "spartantwilight:steeleaf_parrying_dagger",
+    "spartantwilight:knightmetal_parrying_dagger"
   ]
 }

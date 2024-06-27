@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "spartantwilight:fiery_heavy_crossbow",
     "spartantwilight:ironwood_heavy_crossbow",
+    "spartantwilight:fiery_heavy_crossbow",
     "spartantwilight:steeleaf_heavy_crossbow",
     "spartantwilight:knightmetal_heavy_crossbow"
   ]

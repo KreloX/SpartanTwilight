@@ -118,7 +118,7 @@
 		// Javelins
 		"item.spartantwilight.ironwood_javelin": "Дротик из железного дерева",
 		"item.spartantwilight.fiery_javelin": "Огненный дротик",
-		"item.spartantwilight.javelin": "Рыцарский дротик",
+		"item.spartantwilight.knightmetal_javelin": "Рыцарский дротик",
 		"item.spartantwilight.steeleaf_javelin": "Дротик из стальных листьев",
 		
 		// Throwing Knives
@@ -151,12 +151,12 @@
 	// Tooltips
 	
 		// Fiery
-		"tooltip.spartantwilight.trait.fiery": "Пылающий",
-		"tooltip.spartantwilight.trait.fiery.desc": "Поджигает цели при попадании",
+		"tooltip.spartantwilight.trait.blazing": "Пылающий",
+		"tooltip.spartantwilight.trait.blazing.desc": "Поджигает цели при попадании",
 		
-		// Knightly
-		"tooltip.spartantwilight.trait.knightmetal": "Боевые навыки",
-		"tooltip.spartantwilight.trait.knightmetal.desc": "Наносит дополнительный урон бронированным целям",
+		// Knightmetal
+		"tooltip.spartantwilight.trait.combat_skilled": "Боевые навыки",
+		"tooltip.spartantwilight.trait.combat_skilled.desc": "Наносит дополнительный урон бронированным целям",
 		
 	// Tabs
 		

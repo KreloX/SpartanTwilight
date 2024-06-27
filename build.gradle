@@ -3,20 +3,19 @@ buildscript {
         // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
         maven { url = 'https://maven.minecraftforge.net' }
         mavenCentral()
-        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+        gradlePluginPortal()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
     }
 }
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 plugins {
-    id 'eclipse'
+    id 'idea'
     id 'maven-publish'
+    id 'io.github.0ffz.github-packages' version '[1,2)'
 }
 apply plugin: 'net.minecraftforge.gradle'
-apply plugin: 'org.spongepowered.mixin'
 
 
 version = minecraft_version + '-' + mod_version
@@ -35,7 +34,7 @@ minecraft {
     // These can be tweaked, removed, or duplicated as needed.
     runs {
         client {
-            workingDirectory project.file('run')
+            workingDirectory file('run')
 
             // Recommended logging data for a userdev environment
             // The markers can be added/remove as needed separated by commas.
@@ -60,7 +59,7 @@ minecraft {
         }
 
         server {
-            workingDirectory project.file('run')
+            workingDirectory file('run')
 
             property 'forge.logging.markers', 'REGISTRIES'
 
@@ -80,7 +79,7 @@ minecraft {
         // By default, the server will crash when no gametests are provided.
         // The gametest system is also enabled by default for other run configs under the /test command.
         gameTestServer {
-            workingDirectory project.file('run')
+            workingDirectory file('run')
 
             // Recommended logging data for a userdev environment
             // The markers can be added/remove as needed separated by commas.
@@ -105,7 +104,7 @@ minecraft {
         }
 
         data {
-            workingDirectory project.file('run')
+            workingDirectory file('run')
 
             property 'forge.logging.markers', 'REGISTRIES'
 
@@ -133,14 +132,15 @@ repositories {
     maven {
         url "https://cursemaven.com"
     }
+    maven githubPackage.invoke("KreloX/SpartanToolkit")
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     implementation fg.deobf("teamtwilight:twilightforest:${twilight_forest_version}:universal")
     implementation fg.deobf("curse.maven:spartanweaponry-278141:5011992")
+    implementation fg.deobf("krelox.spartantoolkit:spartantoolkit:${minecraft_version}-${toolkit_version}")
 }
 
 tasks.withType(ProcessResources).configureEach {
@@ -149,6 +149,7 @@ tasks.withType(ProcessResources).configureEach {
             forge_version          : forge_version, forge_version_range: forge_version_range,
             loader_version_range   : loader_version_range,
             twilight_forest_version: twilight_forest_version, spartan_weaponry_version_range: spartan_weaponry_version_range,
+            toolkit_version        : toolkit_version,
             mod_id                 : mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
             mod_issue_tracker      : mod_issue_tracker, mod_homepage: mod_homepage, mod_credits: mod_credits,
             mod_authors            : mod_authors, mod_description: mod_description, pack_format_number: pack_format_number,
@@ -167,13 +168,12 @@ jar {
                 "Specification-Title"     : mod_id,
                 "Specification-Vendor"    : mod_authors,
                 "Specification-Version"   : "1", // We are version 1 of ourselves
-                "Implementation-Title"    : project.name,
-                "Implementation-Version"  : project.jar.archiveVersion,
+                "Implementation-Title"    : name,
+                "Implementation-Version"  : jar.archiveVersion,
                 "Implementation-Vendor"   : mod_authors,
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
-    exclude 'assets/spartanweaponry/**'
 }
 
 // Example configuration to allow publishing using the maven-publish plugin
@@ -190,16 +190,11 @@ publishing {
     }
     repositories {
         maven {
-            url "file://${project.projectDir}/mcmodsrepo"
+            url "file://${projectDir}/mcmodsrepo"
         }
     }
 }
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
-}
-
-mixin {
-    config "${project.mod_id}.mixins.json"
-    add sourceSets.main, "${project.mod_id}.refmap.json"
 }

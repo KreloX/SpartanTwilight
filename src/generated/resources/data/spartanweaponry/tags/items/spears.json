@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     "spartantwilight:ironwood_spear",
-    "spartantwilight:steeleaf_spear",
     "spartantwilight:fiery_spear",
+    "spartantwilight:steeleaf_spear",
     "spartantwilight:knightmetal_spear"
   ]
 }

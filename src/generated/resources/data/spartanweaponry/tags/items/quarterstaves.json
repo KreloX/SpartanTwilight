@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
+    "spartantwilight:ironwood_quarterstaff",
     "spartantwilight:fiery_quarterstaff",
-    "spartantwilight:knightmetal_quarterstaff",
     "spartantwilight:steeleaf_quarterstaff",
-    "spartantwilight:ironwood_quarterstaff"
+    "spartantwilight:knightmetal_quarterstaff"
   ]
 }

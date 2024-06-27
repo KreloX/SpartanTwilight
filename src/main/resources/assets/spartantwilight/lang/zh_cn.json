@@ -151,12 +151,12 @@
 	// Tooltips
 	
 		// Fiery
-		"tooltip.spartantwilight.trait.fiery": "炽烈",
-		"tooltip.spartantwilight.trait.fiery.desc": "击中目标会使其燃烧",
+		"tooltip.spartantwilight.trait.blazing": "炽烈",
+		"tooltip.spartantwilight.trait.blazing.desc": "击中目标会使其燃烧",
 		
-		// Knightly
-		"tooltip.spartantwilight.trait.knightmetal": "战技",
-		"tooltip.spartantwilight.trait.knightmetal.desc": "对带有护甲的目标造成额外伤害",
+		// Knightmetal
+		"tooltip.spartantwilight.trait.combat_skilled": "战技",
+		"tooltip.spartantwilight.trait.combat_skilled.desc": "对带有护甲的目标造成额外伤害",
 		
 	// Tabs
 		

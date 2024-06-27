@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "spartantwilight:knightmetal_katana",
-    "spartantwilight:steeleaf_katana",
+    "spartantwilight:ironwood_katana",
     "spartantwilight:fiery_katana",
-    "spartantwilight:ironwood_katana"
+    "spartantwilight:steeleaf_katana",
+    "spartantwilight:knightmetal_katana"
   ]
 }

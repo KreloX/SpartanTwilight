@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "spartantwilight:knightmetal_lance",
+    "spartantwilight:ironwood_lance",
     "spartantwilight:fiery_lance",
     "spartantwilight:steeleaf_lance",
-    "spartantwilight:ironwood_lance"
+    "spartantwilight:knightmetal_lance"
   ]
 }
