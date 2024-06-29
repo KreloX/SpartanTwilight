@@ -23,7 +23,7 @@ public class EntityListener {
         if (!(event.getSource().getEntity() instanceof LivingEntity attacker)) return;
         if (!(attacker.getMainHandItem().getItem() instanceof WeaponItem weapon)) return;
 
-        if (weapon.getMaterial().equals(SpartanTwilight.FIERY.material)) {
+        if (weapon.getMaterial().equals(SpartanTwilight.FIERY)) {
             if (!target.fireImmune()) {
                 target.setSecondsOnFire(15);
             } else {
@@ -51,7 +51,7 @@ public class EntityListener {
             weapon = weaponItem;
         } else return;
 
-        if (weapon.getMaterial().equals(SpartanTwilight.KNIGHTMETAL.material) && target.getArmorValue() > 0) {
+        if (weapon.getMaterial().equals(SpartanTwilight.KNIGHTMETAL) && target.getArmorValue() > 0) {
             if (target.getArmorCoverPercentage() > 0) {
                 int moreBonus = (int) (KNIGHTMETAL_BONUS_DAMAGE * target.getArmorCoverPercentage());
                 event.setAmount(event.getAmount() + moreBonus);

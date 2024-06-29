@@ -4,22 +4,19 @@ import com.oblivioussp.spartanweaponry.ModSpartanWeaponry;
 import com.oblivioussp.spartanweaponry.api.data.model.ModelGenerator;
 import com.oblivioussp.spartanweaponry.api.trait.WeaponTrait;
 import com.oblivioussp.spartanweaponry.init.ModEnchantments;
-import it.unimi.dsi.fastutil.Pair;
 import it.unimi.dsi.fastutil.ints.IntIntPair;
-import krelox.spartantoolkit.SpartanAddon;
-import krelox.spartantoolkit.SpartanMaterial;
-import krelox.spartantoolkit.WeaponMap;
-import krelox.spartantoolkit.WeaponType;
+import krelox.spartantoolkit.*;
+import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -28,7 +25,8 @@ import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.LanguageProvider;
-import net.minecraftforge.common.util.Lazy;
+import net.minecraftforge.event.entity.player.ItemTooltipEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -45,16 +43,8 @@ import java.util.function.Function;
 public class SpartanTwilight extends SpartanAddon {
     public static final String MODID = "spartantwilight";
 
-    public static final CreativeModeTab SPARTAN_TWILIGHT_TAB = new CreativeModeTab("spartantwilight") {
-        public ItemStack makeIcon() {
-            return new ItemStack(WEAPONS.get(Pair.of(KNIGHTMETAL, WeaponType.GREATSWORD)).get());
-        }
-    };
-
-    // Items
     public static final DeferredRegister<Item> ITEMS = itemRegister(MODID);
     public static final WeaponMap WEAPONS = new WeaponMap();
-    public static final RegistryObject<Item> BLAZE_POLE = ITEMS.register("blaze_pole", () -> new Item(new Item.Properties().tab(SPARTAN_TWILIGHT_TAB)));
 
     // Traits
     public static final DeferredRegister<WeaponTrait> WEAPON_TRAITS = traitRegister(MODID);
@@ -66,10 +56,10 @@ public class SpartanTwilight extends SpartanAddon {
             new WeaponTrait("blazing", MODID, WeaponTrait.TraitQuality.POSITIVE).setUniversal(false));
 
     // Materials
-    public static final SpartanMaterial IRONWOOD = new SpartanMaterial("ironwood", MODID, TwilightItemTier.IRONWOOD, ItemTagGenerator.IRONWOOD_INGOTS, Set.of(), Map.of(Lazy.of(() -> Enchantments.KNOCKBACK), 1, Lazy.of(() -> Enchantments.BLOCK_FORTUNE), 1, Lazy.of(ModEnchantments.PROPEL), 1, Lazy.of(() -> Enchantments.PUNCH_ARROWS), 1));
-    public static final SpartanMaterial STEELEAF = new SpartanMaterial("steeleaf", MODID, TwilightItemTier.STEELEAF, ItemTagGenerator.STEELEAF_INGOTS, Set.of(), Map.of(Lazy.of(() -> Enchantments.MOB_LOOTING), 2, Lazy.of(() -> Enchantments.BLOCK_EFFICIENCY), 2, Lazy.of(ModEnchantments.LUCKY_THROW), 2, Lazy.of(() -> Enchantments.QUICK_CHARGE), 2));
+    public static final SpartanMaterial IRONWOOD = new SpartanMaterial("ironwood", MODID, TwilightItemTier.IRONWOOD, ItemTagGenerator.IRONWOOD_INGOTS, Set.of(), Map.of(() -> Enchantments.KNOCKBACK, 1, () -> Enchantments.BLOCK_FORTUNE, 1, ModEnchantments.PROPEL, 1, () -> Enchantments.PUNCH_ARROWS, 1));
+    public static final SpartanMaterial STEELEAF = new SpartanMaterial("steeleaf", MODID, TwilightItemTier.STEELEAF, ItemTagGenerator.STEELEAF_INGOTS, Set.of(), Map.of(() -> Enchantments.MOB_LOOTING, 2, () -> Enchantments.BLOCK_EFFICIENCY, 2, ModEnchantments.LUCKY_THROW, 2, () -> Enchantments.QUICK_CHARGE, 2));
     public static final SpartanMaterial KNIGHTMETAL = new SpartanMaterial("knightmetal", MODID, TwilightItemTier.KNIGHTMETAL, ItemTagGenerator.KNIGHTMETAL_INGOTS, Set.of(COMBAT_SKILLED), Map.of());
-    public static SpartanMaterial FIERY = new SpartanMaterial("fiery", MODID, TwilightItemTier.FIERY, ItemTagGenerator.FIERY_INGOTS, Set.of(BLAZING), Map.of()) {
+    public static final SpartanMaterial FIERY = new SpartanMaterial("fiery", MODID, TwilightItemTier.FIERY, ItemTagGenerator.FIERY_INGOTS, Set.of(BLAZING), Map.of()) {
         @Override
         public ItemLike getHandle() {
             return Items.BLAZE_ROD;
@@ -81,6 +71,10 @@ public class SpartanTwilight extends SpartanAddon {
         }
     };
 
+    public static final CreativeModeTab SPARTAN_TWILIGHT_TAB = tab(MODID, () -> WEAPONS.get(KNIGHTMETAL, WeaponType.GREATSWORD).get());
+
+    public static final RegistryObject<Item> BLAZE_POLE = ITEMS.register("blaze_pole", () -> new Item(new Item.Properties().tab(SPARTAN_TWILIGHT_TAB)));
+
     public SpartanTwilight() {
         var bus = FMLJavaModLoadingContext.get().getModEventBus();
 
@@ -91,6 +85,14 @@ public class SpartanTwilight extends SpartanAddon {
         WEAPON_TRAITS.register(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
+    }
+
+    @SubscribeEvent
+    public void itemTooltip(ItemTooltipEvent event) {
+        if (event.getItemStack().getItem() instanceof WeaponItem weapon && weapon.getMaterial().equals(FIERY)) {
+            List<Component> tooltip = event.getToolTip();
+            tooltip.set(0, tooltip.get(0).copy().withStyle(ChatFormatting.YELLOW));
+        }
     }
 
     @Override
