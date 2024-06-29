@@ -22,6 +22,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.LanguageProvider;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
@@ -74,6 +75,7 @@ public class SpartanTwilight extends SpartanAddon {
 
     public SpartanTwilight() {
         var bus = FMLJavaModLoadingContext.get().getModEventBus();
+        MinecraftForge.EVENT_BUS.register(this);
 
         traitDescriptions.put(COMBAT_SKILLED, "Deals extra damage to armored targets");
         traitDescriptions.put(BLAZING, "Burns targets on hit");
