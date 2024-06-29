@@ -22,7 +22,6 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.LanguageProvider;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
@@ -43,15 +42,13 @@ import java.util.function.Function;
 public class SpartanTwilight extends SpartanAddon {
     public static final String MODID = "spartantwilight";
 
-    public static final DeferredRegister<Item> ITEMS = itemRegister(MODID);
     public static final WeaponMap WEAPONS = new WeaponMap();
-
-    // Traits
+    public static final DeferredRegister<Item> ITEMS = itemRegister(MODID);
     public static final DeferredRegister<WeaponTrait> WEAPON_TRAITS = traitRegister(MODID);
 
+    // Traits
     public static final RegistryObject<WeaponTrait> COMBAT_SKILLED = registerTrait(WEAPON_TRAITS,
             new WeaponTrait("combat_skilled", MODID, WeaponTrait.TraitQuality.POSITIVE).setUniversal(false));
-
     public static final RegistryObject<WeaponTrait> BLAZING = registerTrait(WEAPON_TRAITS,
             new WeaponTrait("blazing", MODID, WeaponTrait.TraitQuality.POSITIVE).setUniversal(false));
 
@@ -83,8 +80,6 @@ public class SpartanTwilight extends SpartanAddon {
         registerSpartanWeapons(ITEMS);
         ITEMS.register(bus);
         WEAPON_TRAITS.register(bus);
-
-        MinecraftForge.EVENT_BUS.register(this);
     }
 
     @SubscribeEvent
