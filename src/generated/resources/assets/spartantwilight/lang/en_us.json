@@ -98,7 +98,7 @@
   "item.spartantwilight.steeleaf_warhammer": "Steeleaf Warhammer",
   "itemGroup.spartantwilight": "Spartan Weaponry: Twilight Forest",
   "tooltip.spartantwilight.trait.blazing": "Blazing",
-  "tooltip.spartantwilight.trait.blazing.desc": "Burns targets on hit",
+  "tooltip.spartantwilight.trait.blazing.desc": "Burns targets",
   "tooltip.spartantwilight.trait.combat_skilled": "Combat Skilled",
-  "tooltip.spartantwilight.trait.combat_skilled.desc": "Deals extra damage to armored targets"
+  "tooltip.spartantwilight.trait.combat_skilled.desc": "Extra damage to armored targets"
 }

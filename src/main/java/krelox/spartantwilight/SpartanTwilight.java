@@ -8,8 +8,6 @@ import it.unimi.dsi.fastutil.ints.IntIntPair;
 import krelox.spartantoolkit.*;
 import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
-import net.minecraft.advancements.critereon.InventoryChangeTrigger;
-import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
@@ -77,8 +75,6 @@ public class SpartanTwilight extends SpartanAddon {
         var bus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
 
-        traitDescriptions.put(COMBAT_SKILLED, "Deals extra damage to armored targets");
-        traitDescriptions.put(BLAZING, "Burns targets on hit");
         registerSpartanWeapons(ITEMS);
         ITEMS.register(bus);
         WEAPON_TRAITS.register(bus);
@@ -111,7 +107,7 @@ public class SpartanTwilight extends SpartanAddon {
         ShapedRecipeBuilder.shaped(BLAZE_POLE.get()).define('#', Items.BLAZE_ROD)
                 .pattern(" #")
                 .pattern("# ")
-                .unlockedBy("has_blaze_rod", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(Items.BLAZE_ROD).build()))
+                .unlockedBy("has_blaze_rod", has(Items.BLAZE_ROD))
                 .save(consumer);
 
         WEAPONS.forEach((key, item) -> {
@@ -119,16 +115,16 @@ public class SpartanTwilight extends SpartanAddon {
             var type = key.second();
             if (material.equals(FIERY)) {
                 ShapelessRecipeBuilder.shapeless(item.get())
-                        .requires(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModSpartanWeaponry.ID, "iron_" + type.toString().toLowerCase()))))
-                        .requires(Ingredient.of(ItemTagGenerator.FIERY_VIAL), MATERIALS_BY_TYPE.get(type).secondInt())
-                        .requires(Ingredient.of(Tags.Items.RODS_BLAZE), MATERIALS_BY_TYPE.get(type).firstInt())
-                        .unlockedBy("has_item", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(ItemTagGenerator.FIERY_VIAL).build()))
+                        .requires(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModSpartanWeaponry.ID, "iron_" + type.name().toLowerCase())))
+                        .requires(Ingredient.of(ItemTagGenerator.FIERY_VIAL), MATERIAL_COUNTS.get(type).secondInt())
+                        .requires(Ingredient.of(Tags.Items.RODS_BLAZE), MATERIAL_COUNTS.get(type).firstInt())
+                        .unlockedBy("has_item", has(ItemTagGenerator.FIERY_VIAL))
                         .save(consumer, new ResourceLocation(MODID, item.get().getRegistryName().getPath() + "_vial"));
             }
         });
     }
 
-    private static final EnumMap<WeaponType, IntIntPair> MATERIALS_BY_TYPE = Util.make(new EnumMap<>(WeaponType.class), map -> {
+    private static final EnumMap<WeaponType, IntIntPair> MATERIAL_COUNTS = Util.make(new EnumMap<>(WeaponType.class), map -> {
         map.put(WeaponType.DAGGER, IntIntPair.of(1, 1));
         map.put(WeaponType.LONGSWORD, IntIntPair.of(1, 4));
         map.put(WeaponType.KATANA, IntIntPair.of(1, 2));
@@ -154,6 +150,14 @@ public class SpartanTwilight extends SpartanAddon {
         map.put(WeaponType.SCYTHE, IntIntPair.of(2, 3));
         map.put(WeaponType.PARRYING_DAGGER, IntIntPair.of(1, 2));
     });
+
+    @Override
+    protected Map<RegistryObject<WeaponTrait>, String> getTraitDescriptions() {
+        return Map.of(
+                COMBAT_SKILLED, "Extra damage to armored targets",
+                BLAZING, "Burns targets"
+        );
+    }
 
     @Override
     public String modid() {
