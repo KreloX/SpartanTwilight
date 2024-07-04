@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_knightmetal": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ingots/knightmetal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "spartantwilight:knightmetal_rapier"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_knightmetal",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "spartantwilight:knightmetal_rapier"
+    ]
+  },
+  "sends_telemetry_event": true
+}

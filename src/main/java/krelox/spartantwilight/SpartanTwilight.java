@@ -9,6 +9,7 @@ import krelox.spartantoolkit.*;
 import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
 import net.minecraft.data.recipes.FinishedRecipe;
+import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.network.chat.Component;
@@ -43,12 +44,13 @@ public class SpartanTwilight extends SpartanAddon {
 
     public static final WeaponMap WEAPONS = new WeaponMap();
     public static final DeferredRegister<Item> ITEMS = itemRegister(MODID);
-    public static final DeferredRegister<WeaponTrait> WEAPON_TRAITS = traitRegister(MODID);
+    public static final DeferredRegister<WeaponTrait> TRAITS = traitRegister(MODID);
+    public static final DeferredRegister<CreativeModeTab> TABS = tabRegister(MODID);
 
     // Traits
-    public static final RegistryObject<WeaponTrait> COMBAT_SKILLED = registerTrait(WEAPON_TRAITS,
+    public static final RegistryObject<WeaponTrait> COMBAT_SKILLED = registerTrait(TRAITS,
             new WeaponTrait("combat_skilled", MODID, WeaponTrait.TraitQuality.POSITIVE).setUniversal(false));
-    public static final RegistryObject<WeaponTrait> BLAZING = registerTrait(WEAPON_TRAITS,
+    public static final RegistryObject<WeaponTrait> BLAZING = registerTrait(TRAITS,
             new WeaponTrait("blazing", MODID, WeaponTrait.TraitQuality.POSITIVE).setUniversal(false));
 
     // Materials
@@ -66,10 +68,12 @@ public class SpartanTwilight extends SpartanAddon {
             return BLAZE_POLE.get();
         }
     };
+    
+    @SuppressWarnings("unused")
+    public static final RegistryObject<CreativeModeTab> SPARTAN_TWILIGHT_TAB = registerTab(TABS, MODID, () -> WEAPONS.get(KNIGHTMETAL, WeaponType.GREATSWORD).get(),
+            (parameters, output) -> ITEMS.getEntries().forEach(item -> output.accept(item.get())));
 
-    public static final CreativeModeTab SPARTAN_TWILIGHT_TAB = tab(MODID, () -> WEAPONS.get(KNIGHTMETAL, WeaponType.GREATSWORD).get());
-
-    public static final RegistryObject<Item> BLAZE_POLE = ITEMS.register("blaze_pole", () -> new Item(new Item.Properties().tab(SPARTAN_TWILIGHT_TAB)));
+    public static final RegistryObject<Item> BLAZE_POLE = ITEMS.register("blaze_pole", () -> new Item(new Item.Properties()));
 
     public SpartanTwilight() {
         var bus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -77,7 +81,8 @@ public class SpartanTwilight extends SpartanAddon {
 
         registerSpartanWeapons(ITEMS);
         ITEMS.register(bus);
-        WEAPON_TRAITS.register(bus);
+        TRAITS.register(bus);
+        TABS.register(bus);
     }
 
     @SubscribeEvent
@@ -104,7 +109,7 @@ public class SpartanTwilight extends SpartanAddon {
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
         super.buildCraftingRecipes(consumer);
 
-        ShapedRecipeBuilder.shaped(BLAZE_POLE.get()).define('#', Items.BLAZE_ROD)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, BLAZE_POLE.get()).define('#', Items.BLAZE_ROD)
                 .pattern(" #")
                 .pattern("# ")
                 .unlockedBy("has_blaze_rod", has(Items.BLAZE_ROD))
@@ -114,7 +119,7 @@ public class SpartanTwilight extends SpartanAddon {
             var material = key.first();
             var type = key.second();
             if (material.equals(FIERY)) {
-                ShapelessRecipeBuilder.shapeless(item.get())
+                ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, item.get())
                         .requires(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModSpartanWeaponry.ID, "iron_" + type.name().toLowerCase())))
                         .requires(Ingredient.of(ItemTagGenerator.FIERY_VIAL), MATERIAL_COUNTS.get(type).secondInt())
                         .requires(Ingredient.of(Tags.Items.RODS_BLAZE), MATERIAL_COUNTS.get(type).firstInt())
@@ -167,11 +172,6 @@ public class SpartanTwilight extends SpartanAddon {
     @Override
     public List<SpartanMaterial> getMaterials() {
         return List.of(IRONWOOD, FIERY, STEELEAF, KNIGHTMETAL);
-    }
-
-    @Override
-    public CreativeModeTab getTab() {
-        return SPARTAN_TWILIGHT_TAB;
     }
 
     @Override

@@ -1,31 +1,31 @@
 {
   "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "spartanweaponry:type_disabled",
+      "disabled": [
+        "lance"
+      ]
+    }
+  ],
   "group": "spartanweaponry:lance",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/fiery"
+    },
+    "/": {
+      "item": "spartantwilight:blaze_pole"
+    },
+    "|": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
   "pattern": [
     "  #",
     "#/ ",
     "|# "
   ],
-  "key": {
-    "#": {
-      "tag": "forge:ingots/fiery"
-    },
-    "|": {
-      "item": "minecraft:blaze_rod"
-    },
-    "/": {
-      "item": "spartantwilight:blaze_pole"
-    }
-  },
   "result": {
     "item": "spartantwilight:fiery_lance"
-  },
-  "conditions": [
-    {
-      "disabled": [
-        "lance"
-      ],
-      "type": "spartanweaponry:type_disabled"
-    }
-  ]
+  }
 }

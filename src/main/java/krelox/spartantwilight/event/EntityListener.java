@@ -28,10 +28,11 @@ public class EntityListener {
                 target.setSecondsOnFire(15);
             } else {
                 for (int i = 0; i < 20; ++i) {
-                    double px = target.getX() + target.level.getRandom().nextFloat() * target.getBbWidth() * 2.0F - target.getBbWidth();
-                    double py = target.getY() + target.level.getRandom().nextFloat() * target.getBbHeight();
-                    double pz = target.getZ() + target.level.getRandom().nextFloat() * target.getBbWidth() * 2.0F - target.getBbWidth();
-                    target.level.addParticle(ParticleTypes.FLAME, px, py, pz, 0.02, 0.02, 0.02);
+                    var level = target.level();
+                    double px = target.getX() + level.getRandom().nextFloat() * target.getBbWidth() * 2.0F - target.getBbWidth();
+                    double py = target.getY() + level.getRandom().nextFloat() * target.getBbHeight();
+                    double pz = target.getZ() + level.getRandom().nextFloat() * target.getBbWidth() * 2.0F - target.getBbWidth();
+                    level.addParticle(ParticleTypes.FLAME, px, py, pz, 0.02, 0.02, 0.02);
                 }
             }
         }
@@ -41,7 +42,7 @@ public class EntityListener {
     public static void onKnightmetalToolDamage(LivingHurtEvent event) {
         LivingEntity target = event.getEntity();
 
-        if (!(target.level instanceof ServerLevel level)) return;
+        if (!(target.level() instanceof ServerLevel level)) return;
         if (!(event.getSource().getEntity() instanceof LivingEntity attacker)) return;
 
         WeaponItem weapon;
