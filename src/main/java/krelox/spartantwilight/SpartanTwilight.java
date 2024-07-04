@@ -119,7 +119,7 @@ public class SpartanTwilight extends SpartanAddon {
                         .requires(Ingredient.of(ItemTagGenerator.FIERY_VIAL), MATERIAL_COUNTS.get(type).secondInt())
                         .requires(Ingredient.of(Tags.Items.RODS_BLAZE), MATERIAL_COUNTS.get(type).firstInt())
                         .unlockedBy("has_item", has(ItemTagGenerator.FIERY_VIAL))
-                        .save(consumer, new ResourceLocation(MODID, item.get().getRegistryName().getPath() + "_vial"));
+                        .save(consumer, new ResourceLocation(MODID, ForgeRegistries.ITEMS.getKey(item.get()).getPath() + "_vial"));
             }
         });
     }

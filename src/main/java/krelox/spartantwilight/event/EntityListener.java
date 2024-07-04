@@ -18,7 +18,7 @@ public class EntityListener {
 
     @SubscribeEvent
     public static void fieryToolSetFire(LivingAttackEvent event) {
-        LivingEntity target = event.getEntityLiving();
+        LivingEntity target = event.getEntity();
 
         if (!(event.getSource().getEntity() instanceof LivingEntity attacker)) return;
         if (!(attacker.getMainHandItem().getItem() instanceof WeaponItem weapon)) return;
@@ -39,7 +39,7 @@ public class EntityListener {
 
     @SubscribeEvent
     public static void onKnightmetalToolDamage(LivingHurtEvent event) {
-        LivingEntity target = event.getEntityLiving();
+        LivingEntity target = event.getEntity();
 
         if (!(target.level instanceof ServerLevel level)) return;
         if (!(event.getSource().getEntity() instanceof LivingEntity attacker)) return;
