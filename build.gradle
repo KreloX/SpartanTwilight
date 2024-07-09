@@ -1,7 +1,7 @@
 buildscript {
     repositories {
         // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
-        maven { url = 'https://maven.minecraftforge.net' }
+        maven { url 'https://maven.minecraftforge.net' }
         mavenCentral()
         gradlePluginPortal()
     }
@@ -36,6 +36,10 @@ minecraft {
         client {
             workingDirectory file('run')
 
+            arg "-mixin.config=spartantoolkit.mixins.json"
+            properties 'mixin.env.remapRefMap': 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+
             // Recommended logging data for a userdev environment
             // The markers can be added/remove as needed separated by commas.
             // "SCAN": For mods scan.
@@ -60,6 +64,10 @@ minecraft {
 
         server {
             workingDirectory file('run')
+
+            arg "-mixin.config=spartantoolkit.mixins.json"
+            properties 'mixin.env.remapRefMap': 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
             property 'forge.logging.markers', 'REGISTRIES'
 
@@ -106,6 +114,10 @@ minecraft {
         data {
             workingDirectory file('run')
 
+            arg "-mixin.config=spartantoolkit.mixins.json"
+            properties 'mixin.env.remapRefMap': 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+
             property 'forge.logging.markers', 'REGISTRIES'
 
             property 'forge.logging.console.level', 'debug'
@@ -127,11 +139,11 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
     maven {
-        url = "https://modmaven.dev/" // Twilight Forest
+        url "https://modmaven.dev/" // Twilight Forest
     }
     maven {
-        name = "Modrinth"
-        url = "https://api.modrinth.com/maven"
+        name "Modrinth"
+        url "https://api.modrinth.com/maven"
     }
     maven githubPackage.invoke("KreloX/SpartanToolkit")
 }
@@ -139,7 +151,7 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
-    implementation fg.deobf("krelox.spartantoolkit:spartantoolkit:${minecraft_version}-${toolkit_version}")
+    implementation fg.deobf("krelox.spartantoolkit:spartantoolkit:${minecraft_version}-${spartan_toolkit_version}")
 
     implementation fg.deobf("maven.modrinth:spartan-weaponry:${spartan_weaponry_version}")
     implementation fg.deobf("teamtwilight:twilightforest:${twilight_forest_version}:universal")
@@ -147,14 +159,14 @@ dependencies {
 
 tasks.withType(ProcessResources).configureEach {
     var replaceProperties = [
-            minecraft_version      : minecraft_version, minecraft_version_range: minecraft_version_range,
-            forge_version          : forge_version, forge_version_range: forge_version_range,
-            loader_version_range   : loader_version_range,
-            twilight_forest_version: twilight_forest_version, spartan_weaponry_version: spartan_weaponry_version,
-            toolkit_version        : toolkit_version,
-            mod_id                 : mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
-            mod_issue_tracker      : mod_issue_tracker, mod_homepage: mod_homepage, mod_credits: mod_credits,
-            mod_authors            : mod_authors, mod_description: mod_description, pack_format_number: pack_format_number,
+            minecraft_version       : minecraft_version, minecraft_version_range: minecraft_version_range,
+            forge_version           : forge_version, forge_version_range: forge_version_range,
+            loader_version_range    : loader_version_range,
+            spartan_weaponry_version: spartan_weaponry_version, spartan_toolkit_version: spartan_toolkit_version,
+            twilight_forest_version : twilight_forest_version,
+            mod_id                  : mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
+            mod_issue_tracker       : mod_issue_tracker, mod_homepage: mod_homepage, mod_credits: mod_credits,
+            mod_authors             : mod_authors, mod_description: mod_description, pack_format_number: pack_format_number,
     ]
     inputs.properties replaceProperties
 
