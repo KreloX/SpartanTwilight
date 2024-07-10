@@ -151,9 +151,9 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
+    implementation fg.deobf("maven.modrinth:spartan-weaponry:${spartan_weaponry_version}")
     implementation fg.deobf("krelox.spartantoolkit:spartantoolkit:${minecraft_version}-${spartan_toolkit_version}")
 
-    implementation fg.deobf("maven.modrinth:spartan-weaponry:${spartan_weaponry_version}")
     implementation fg.deobf("teamtwilight:twilightforest:${twilight_forest_version}:universal")
 }
 
