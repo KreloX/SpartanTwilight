@@ -2,6 +2,7 @@ package krelox.spartantwilight;
 
 import com.oblivioussp.spartanweaponry.ModSpartanWeaponry;
 import com.oblivioussp.spartanweaponry.api.WeaponMaterial;
+import com.oblivioussp.spartanweaponry.api.WeaponTraits;
 import com.oblivioussp.spartanweaponry.api.data.model.ModelGenerator;
 import com.oblivioussp.spartanweaponry.api.trait.WeaponTrait;
 import com.oblivioussp.spartanweaponry.init.ModEnchantments;
@@ -35,8 +36,8 @@ import twilightforest.util.TwilightItemTier;
 
 import java.util.EnumMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
-import java.util.Set;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
@@ -52,18 +53,20 @@ public class SpartanTwilight extends SpartanAddon {
     public static final RegistryObject<Item> BLAZE_POLE = ITEMS.register("blaze_pole", () -> new Item(new Item.Properties()));
 
     // Traits
-    public static final RegistryObject<WeaponTrait> COMBAT_SKILLED = registerTrait(TRAITS,
-            new BetterWeaponTrait("combat_skilled", MODID, WeaponTrait.TraitQuality.POSITIVE) {
+    public static final RegistryObject<WeaponTrait> ARMORED_DAMAGE_BONUS = registerTrait(TRAITS,
+            new BetterWeaponTrait("armored_damage_bonus", MODID, WeaponTrait.TraitQuality.POSITIVE) {
                 private static final int KNIGHTMETAL_BONUS_DAMAGE = 2;
+
+                @Override
+                public String getDescription() {
+                    return String.format(Locale.US, "+%.1f damage against armored foes", (float) KNIGHTMETAL_BONUS_DAMAGE);
+                }
 
                 @Override
                 public float modifyDamageDealt(WeaponMaterial material, float baseDamage, DamageSource source, LivingEntity attacker, LivingEntity victim) {
                     if (!(victim.level() instanceof ServerLevel world)) return baseDamage;
-                    if (attacker.swinging) return baseDamage;
 
-                    WeaponItem weapon = (WeaponItem) attacker.getMainHandItem().getItem();
-
-                    if (weapon.getMaterial().getBonusTraits().contains(SpartanTwilight.COMBAT_SKILLED.get()) && victim.getArmorValue() > 0) {
+                    if (victim.getArmorValue() > 0) {
                         // enchantment attack sparkles
                         world.getChunkSource().broadcastAndSend(victim, new ClientboundAnimatePacket(victim, 5));
                         if (victim.getArmorCoverPercentage() > 0) {
@@ -75,39 +78,43 @@ public class SpartanTwilight extends SpartanAddon {
                     }
                     return baseDamage;
                 }
-            }.setUniversal(false));
+            }.setUniversal());
     public static final RegistryObject<WeaponTrait> BLAZING = registerTrait(TRAITS,
             new BetterWeaponTrait("blazing", MODID, WeaponTrait.TraitQuality.POSITIVE) {
+                @Override
+                public String getDescription() {
+                    return "Sets foes on fire for 15 seconds";
+                }
+
                 @Override
                 public void onHitEntity(WeaponMaterial material, ItemStack stack, LivingEntity target, LivingEntity attacker, Entity projectile) {
                     if (!(target.level() instanceof ServerLevel world)) return;
 
-                    WeaponItem weapon = (WeaponItem) stack.getItem();
-
-                    if (weapon.getMaterial().getBonusTraits().contains(SpartanTwilight.BLAZING.get())) {
-                        if (!target.fireImmune()) {
-                            target.setSecondsOnFire(15);
-                        } else {
-                            for (int i = 0; i < 20; ++i) {
-                                double px = target.getX() + world.getRandom().nextFloat() * target.getBbWidth() * 2.0F - target.getBbWidth();
-                                double py = target.getY() + world.getRandom().nextFloat() * target.getBbHeight();
-                                double pz = target.getZ() + world.getRandom().nextFloat() * target.getBbWidth() * 2.0F - target.getBbWidth();
-                                world.sendParticles(ParticleTypes.FLAME, px, py, pz, 0, 0.02, 0.02, 0.02, 1);
-                            }
+                    if (!target.fireImmune()) {
+                        target.setSecondsOnFire(15);
+                    } else {
+                        for (int i = 0; i < 20; ++i) {
+                            double px = target.getX() + world.getRandom().nextFloat() * target.getBbWidth() * 2.0F - target.getBbWidth();
+                            double py = target.getY() + world.getRandom().nextFloat() * target.getBbHeight();
+                            double pz = target.getZ() + world.getRandom().nextFloat() * target.getBbWidth() * 2.0F - target.getBbWidth();
+                            world.sendParticles(ParticleTypes.FLAME, px, py, pz, 0, 0.02, 0.02, 0.02, 1);
                         }
                     }
                 }
-            }.setUniversal(false));
+            }.setUniversal());
 
     // Materials
-    public static final SpartanMaterial IRONWOOD = new SpartanMaterial("ironwood", MODID, TwilightItemTier.IRONWOOD, ItemTagGenerator.IRONWOOD_INGOTS, Set.of(), Map.of(() -> Enchantments.KNOCKBACK, 1, () -> Enchantments.BLOCK_FORTUNE, 1, ModEnchantments.PROPEL, 1, () -> Enchantments.PUNCH_ARROWS, 1));
-    public static final SpartanMaterial STEELEAF = new SpartanMaterial("steeleaf", MODID, TwilightItemTier.STEELEAF, ItemTagGenerator.STEELEAF_INGOTS, Set.of(), Map.of(() -> Enchantments.MOB_LOOTING, 2, () -> Enchantments.BLOCK_EFFICIENCY, 2, ModEnchantments.LUCKY_THROW, 2, () -> Enchantments.QUICK_CHARGE, 2));
-    public static final SpartanMaterial KNIGHTMETAL = new SpartanMaterial("knightmetal", MODID, TwilightItemTier.KNIGHTMETAL, ItemTagGenerator.KNIGHTMETAL_INGOTS, COMBAT_SKILLED);
-    public static final SpartanMaterial FIERY = new SpartanMaterial("fiery", MODID, TwilightItemTier.FIERY, ItemTagGenerator.FIERY_INGOTS, BLAZING)
+    public static final SpartanMaterial IRONWOOD = new SpartanMaterial("ironwood", MODID, TwilightItemTier.IRONWOOD, ItemTagGenerator.IRONWOOD_INGOTS, List.of(),
+            Map.of(() -> Enchantments.KNOCKBACK, 1, () -> Enchantments.BLOCK_FORTUNE, 1, ModEnchantments.PROPEL, 1, () -> Enchantments.PUNCH_ARROWS, 1));
+    public static final SpartanMaterial STEELEAF = new SpartanMaterial("steeleaf", MODID, TwilightItemTier.STEELEAF, ItemTagGenerator.STEELEAF_INGOTS, List.of(),
+            Map.of(() -> Enchantments.MOB_LOOTING, 2, () -> Enchantments.BLOCK_EFFICIENCY, 2, ModEnchantments.LUCKY_THROW, 2, () -> Enchantments.QUICK_CHARGE, 2));
+    public static final SpartanMaterial KNIGHTMETAL = new SpartanMaterial("knightmetal", MODID, TwilightItemTier.KNIGHTMETAL, ItemTagGenerator.KNIGHTMETAL_INGOTS, ARMORED_DAMAGE_BONUS);
+    public static final SpartanMaterial FIERY = new SpartanMaterial("fiery", MODID, TwilightItemTier.FIERY, ItemTagGenerator.FIERY_INGOTS, WeaponTraits.FIREPROOF, BLAZING)
             .setRarity(Rarity.UNCOMMON).setHandle(() -> Items.BLAZE_ROD).setPole(BLAZE_POLE);
 
     @SuppressWarnings("unused")
-    public static final RegistryObject<CreativeModeTab> SPARTAN_TWILIGHT_TAB = registerTab(TABS, MODID, () -> WEAPONS.get(KNIGHTMETAL, WeaponType.GREATSWORD).get(),
+    public static final RegistryObject<CreativeModeTab> SPARTAN_TWILIGHT_TAB = registerTab(TABS, MODID,
+            () -> WEAPONS.get(KNIGHTMETAL, WeaponType.BATTLEAXE).get(),
             (parameters, output) -> ITEMS.getEntries().forEach(item -> output.accept(item.get())));
 
     public SpartanTwilight() {
@@ -182,14 +189,6 @@ public class SpartanTwilight extends SpartanAddon {
         map.put(WeaponType.SCYTHE, IntIntPair.of(2, 3));
         map.put(WeaponType.PARRYING_DAGGER, IntIntPair.of(1, 2));
     });
-
-    @Override
-    protected Map<RegistryObject<WeaponTrait>, String> getTraitDescriptions() {
-        return Map.of(
-                COMBAT_SKILLED, "Extra damage to armored targets",
-                BLAZING, "Burns targets"
-        );
-    }
 
     @Override
     public String modid() {
