@@ -1,6 +1,5 @@
 {
-  "replace": false,
   "values": [
-    "spartantwilight:combat_skilled"
+    "spartantwilight:armored_damage_bonus"
   ]
 }

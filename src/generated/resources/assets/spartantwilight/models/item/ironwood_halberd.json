@@ -1,22 +1,22 @@
 {
   "parent": "spartanweaponry:item/base/halberd",
-  "textures": {
-    "layer0": "spartantwilight:item/ironwood_halberd",
-    "coating": "spartanweaponry:item/coating/halberd"
-  },
   "loader": "spartanweaponry:oil_coated_item",
   "overrides": [
     {
+      "model": "spartantwilight:item/ironwood_halberd_blocking",
       "predicate": {
         "spartanweaponry:blocking": 1.0
-      },
-      "model": "spartantwilight:item/ironwood_halberd_blocking"
+      }
     },
     {
+      "model": "spartantwilight:item/ironwood_halberd_throwing",
       "predicate": {
         "spartanweaponry:throwing": 1.0
-      },
-      "model": "spartantwilight:item/ironwood_halberd_throwing"
+      }
     }
-  ]
+  ],
+  "textures": {
+    "coating": "spartanweaponry:item/coating/halberd",
+    "layer0": "spartantwilight:item/ironwood_halberd"
+  }
 }

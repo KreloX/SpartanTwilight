@@ -155,8 +155,8 @@
 		"tooltip.spartantwilight.trait.blazing.desc": "Поджигает цели при попадании",
 		
 		// Knightmetal
-		"tooltip.spartantwilight.trait.combat_skilled": "Боевые навыки",
-		"tooltip.spartantwilight.trait.combat_skilled.desc": "Наносит дополнительный урон бронированным целям",
+		"tooltip.spartantwilight.trait.armored_damage_bonus": "Боевые навыки",
+		"tooltip.spartantwilight.trait.armored_damage_bonus.desc": "Наносит дополнительный урон бронированным целям",
 		
 	// Tabs
 		

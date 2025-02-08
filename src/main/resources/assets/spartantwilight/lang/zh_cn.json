@@ -155,8 +155,8 @@
 		"tooltip.spartantwilight.trait.blazing.desc": "击中目标会使其燃烧",
 		
 		// Knightmetal
-		"tooltip.spartantwilight.trait.combat_skilled": "战技",
-		"tooltip.spartantwilight.trait.combat_skilled.desc": "对带有护甲的目标造成额外伤害",
+		"tooltip.spartantwilight.trait.armored_damage_bonus": "战技",
+		"tooltip.spartantwilight.trait.armored_damage_bonus.desc": "对带有护甲的目标造成额外伤害",
 		
 	// Tabs
 		
