@@ -23,6 +23,8 @@
     "#|"
   ],
   "result": {
-    "item": "spartantwilight:ironwood_saber"
+    "type": "minecraft:item_nbt",
+    "item": "spartantwilight:ironwood_saber",
+    "nbt": "{Enchantments:[{id:\"minecraft:knockback\",lvl:1s}]}"
   }
 }

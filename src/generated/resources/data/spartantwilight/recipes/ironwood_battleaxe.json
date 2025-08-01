@@ -26,6 +26,8 @@
     " | "
   ],
   "result": {
-    "item": "spartantwilight:ironwood_battleaxe"
+    "type": "minecraft:item_nbt",
+    "item": "spartantwilight:ironwood_battleaxe",
+    "nbt": "{Enchantments:[{id:\"minecraft:fortune\",lvl:1s},{id:\"minecraft:knockback\",lvl:1s}]}"
   }
 }

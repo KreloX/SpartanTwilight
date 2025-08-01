@@ -26,6 +26,8 @@
     " | "
   ],
   "result": {
-    "item": "spartantwilight:steeleaf_battleaxe"
+    "type": "minecraft:item_nbt",
+    "item": "spartantwilight:steeleaf_battleaxe",
+    "nbt": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:2s},{id:\"minecraft:looting\",lvl:2s}]}"
   }
 }

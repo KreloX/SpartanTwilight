@@ -26,6 +26,8 @@
     "|  "
   ],
   "result": {
-    "item": "spartantwilight:steeleaf_flanged_mace"
+    "type": "minecraft:item_nbt",
+    "item": "spartantwilight:steeleaf_flanged_mace",
+    "nbt": "{Enchantments:[{id:\"minecraft:looting\",lvl:2s}]}"
   }
 }

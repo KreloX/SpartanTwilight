@@ -22,6 +22,8 @@
     "/"
   ],
   "result": {
-    "item": "spartantwilight:ironwood_spear"
+    "type": "minecraft:item_nbt",
+    "item": "spartantwilight:ironwood_spear",
+    "nbt": "{Enchantments:[{id:\"minecraft:knockback\",lvl:1s}]}"
   }
 }

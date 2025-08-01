@@ -26,6 +26,8 @@
     "|  "
   ],
   "result": {
-    "item": "spartantwilight:ironwood_flanged_mace"
+    "type": "minecraft:item_nbt",
+    "item": "spartantwilight:ironwood_flanged_mace",
+    "nbt": "{Enchantments:[{id:\"minecraft:knockback\",lvl:1s}]}"
   }
 }

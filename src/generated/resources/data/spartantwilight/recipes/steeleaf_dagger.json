@@ -22,6 +22,8 @@
     "|"
   ],
   "result": {
-    "item": "spartantwilight:steeleaf_dagger"
+    "type": "minecraft:item_nbt",
+    "item": "spartantwilight:steeleaf_dagger",
+    "nbt": "{Enchantments:[{id:\"minecraft:looting\",lvl:2s}]}"
   }
 }

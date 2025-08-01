@@ -23,6 +23,8 @@
     "|# "
   ],
   "result": {
-    "item": "spartantwilight:steeleaf_rapier"
+    "type": "minecraft:item_nbt",
+    "item": "spartantwilight:steeleaf_rapier",
+    "nbt": "{Enchantments:[{id:\"minecraft:looting\",lvl:2s}]}"
   }
 }

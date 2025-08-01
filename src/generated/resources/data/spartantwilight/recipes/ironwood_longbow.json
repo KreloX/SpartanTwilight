@@ -29,6 +29,8 @@
     "#~~"
   ],
   "result": {
-    "item": "spartantwilight:ironwood_longbow"
+    "type": "minecraft:item_nbt",
+    "item": "spartantwilight:ironwood_longbow",
+    "nbt": "{Enchantments:[{id:\"minecraft:punch\",lvl:1s}]}"
   }
 }

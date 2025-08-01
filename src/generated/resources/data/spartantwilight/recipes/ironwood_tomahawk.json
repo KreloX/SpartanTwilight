@@ -22,6 +22,8 @@
     " #"
   ],
   "result": {
-    "item": "spartantwilight:ironwood_tomahawk"
+    "type": "minecraft:item_nbt",
+    "item": "spartantwilight:ironwood_tomahawk",
+    "nbt": "{Enchantments:[{id:\"spartanweaponry:propel\",lvl:1s}]}"
   }
 }
