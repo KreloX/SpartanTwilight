@@ -104,10 +104,10 @@
 		"item.spartantwilight.steeleaf_greatsword": "钢叶大剑",
 
 		// Boomerangs
-		"item.spartantwilight.ironwood_boomerang": "铁树回力镖",
-		"item.spartantwilight.fiery_boomerang": "炽铁回力镖",
-		"item.spartantwilight.knightmetal_boomerang": "骑士金属回力镖",
-		"item.spartantwilight.steeleaf_boomerang": "钢叶回力镖",
+		"item.spartantwilight.ironwood_boomerang": "铁树回旋镖",
+		"item.spartantwilight.fiery_boomerang": "炽铁回旋镖",
+		"item.spartantwilight.knightmetal_boomerang": "骑士金属回旋镖",
+		"item.spartantwilight.steeleaf_boomerang": "钢叶回旋镖",
 
 		// Crossbows
 		"item.spartantwilight.ironwood_heavy_crossbow": "铁树强化重弩",
@@ -148,7 +148,7 @@
 		// Misc
 		"item.spartantwilight.blaze_pole": "烈焰手柄",
 
-	        // Tooltips
+	    // Tooltips
 	
 		// Fiery
 		"tooltip.spartantwilight.trait.blazing": "炽烈",
@@ -158,8 +158,9 @@
 		"tooltip.spartantwilight.trait.armored_damage_bonus": "战技",
 		"tooltip.spartantwilight.trait.armored_damage_bonus.desc": "对带有护甲的目标造成额外伤害",
 		
-	        // Tabs
+	    // Tabs
 		
 		// SWTF
 		"itemGroup.spartantwilight": "斯巴达的武器：暮色森林"
 }
+
